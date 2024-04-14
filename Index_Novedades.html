@@ -48,12 +48,11 @@
         }
         #novedades{
             display: flex;
-            justify-content: center;
-            flex-direction: column;
+            flex-wrap: wrap; /* Envuelve los elementos a la siguiente fila cuando no hay suficiente espacio */
+            justify-content: center; /* Centra los elementos horizontalmente */
             padding: 50px;
             border-bottom: 1px solid rgba(0,0,0,0.05);
-            
-        } 
+        }
     
         .novedades-heading{
          display: flex;
@@ -77,10 +76,11 @@
             flex-wrap: wrap;
         }
         .novedades-box{
-            width: 350px;
+            width: calc(50% - 40px); /* Calcula el ancho para dos columnas con un margen de 20px entre ellos */
+            max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
             background-color: #ffffff;
             border: 1px solid #ececec;
-            margin: 20px;
+            margin: 50px;
         }
         .novedades-img{
             width: 100%;
@@ -193,6 +193,7 @@
                     <h3><span>Noticias recientes del Mundo Agricultura</span></h3>
                 </div>
                 <div class="novedades-container">
+
                     <div class="novedades-box">
                         <div class="novedades-text">
                             <a href="#" class="novedades-title">Fuimos auspiciadores del séptimo Congreso Internacional de Mango y Palto</a>
@@ -204,6 +205,7 @@
                             <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
                         </div>
                     </div>
+
                     <div class="novedades-box">
                         <div class="novedades-text">
                             <a href="#" class="novedades-title">S.A, participa en importante evento nacional</a>
@@ -215,6 +217,81 @@
                             <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
                         </div>
                     </div>
+
+                        <div class="novedades-box">
+                            <div class="novedades-text">
+                                <a href="#" class="novedades-title">Ejecutivo facilitará créditos a pequeños productores del agro con transferencia de S/ 100 millones</a>
+                                <div class="novedades-img">
+                                    <img src="imagenes/nov5.jpg" alt="NOVEDADES">
+                                </div>   
+                                <span>31 Mar 2024 / Procampo</span>
+                                <p>Medida permitirá otorgar un incentivo al pequeño productor agrario para acceder a créditos del Banco Agropecuario (Agrobanco). El Ministerio de Desarrollo Agrario y Riego (Midagri) informó que el Ejecutivo aprobó transferir S/ 100 millones al Fondo para la Inclusión Financiera del Pequeño Productor Agropecuario (FIFPPA) con...</p>
+                                <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                            </div>
+                    </div>
+
+                    <div class="novedades-box">
+                        <div class="novedades-text">
+                            <a href="#" class="novedades-title">MEF busca ampliar incentivos del sector textil al sector agroexportador</a>
+                            <div class="novedades-img">
+                                <img src="imagenes/nov4.jpg" alt="NOVEDADES">
+                            </div>   
+                            <span>24 Oct 2024 / Procampo</span>
+                            <p>Entre los planes está expandir su producción a China. Para tal fin está adquiriendo granjas y comenzará a plantar a fines de este año o en primer trimestre de 2024. En un contexto de reducción de volúmenes de los arándanos peruanos impactados por factores climáticos, el...</p>
+                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                        </div>
+                    </div>
+
+                    <div class="novedades-box">
+                        <div class="novedades-text">
+                            <a href="#" class="novedades-title">Productores peruanos podrían exportar hasta 100 mil toneladas de arroz al mercado colombiano</a>
+                            <div class="novedades-img">
+                                <img src="imagenes/nov7.jpg" alt="NOVEDADES">
+                            </div>   
+                            <span>17 Feb 2024 / Procampo</span>
+                            <p>La potencialidad de las exportaciones de arroz nacional a Colombia se estima en alrededor de US$ 70 millones anuales y con un volumen promedio de 100 mil toneladas, montos que podrían alcanzarse como parte del levantamiento de las restricciones del gobierno de Colombia en la...</p>
+                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                        </div>
+                    </div>
+
+                    <div class="novedades-box">
+                        <div class="novedades-text">
+                            <a href="#" class="novedades-title">Agroexportaciones Llacta y la incursión de nuevos productores al cultivo de kion</a>
+                            <div class="novedades-img">
+                                <img src="imagenes/nov8.jpg" alt="NOVEDADES">
+                            </div>   
+                            <span>7 Feb 2024 / Procampo</span>
+                            <p>La temporada 2023-2024 de jengibre promete una recuperación en la producción, luego de que el volumen cayera un 60% pese a la alta demanda de mercados extranjeros. Agroexportaciones Llacta reporta ingreso a nuevos competidores a este cultivo. Si bien la actual oferta de kion sigue siendo...</p>
+                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                        </div>
+                    </div>
+
+                    <div class="novedades-box">
+                        <div class="novedades-text">
+                            <a href="#" class="novedades-title">MIDAGRI inicia 84 Núcleos Ejecutores para reactivación económica del Agro en 12 departamentos</a>
+                            <div class="novedades-img">
+                                <img src="imagenes/nov9.jpg" alt="NOVEDADES">
+                            </div>   
+                            <span> 26 Oct 2024 / Procampo</span>
+                            <p>La Unidad Ejecutora Fondo Sierra Azul (UEFSA) del MIDAGRI en el marco del Plan Con Punche Perú, inició la ejecución de 84 núcleos ejecutores (NE), lo que representa un 88.4 % del total de 95 NE (que comprenden: 645 qochas y 570 kilómetros de zanjas...</p>
+                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                        </div>
+                    </div>
+
+
+                    <div class="novedades-box">
+                        <div class="novedades-text">
+                            <a href="#" class="novedades-title">Agroexportaciones caen 2.6% a octubre por menores ventas de café, ¿y qué otros productos?</a>
+                            <div class="novedades-img">
+                                <img src="imagenes/nov10.jpg" alt="NOVEDADES">
+                            </div>   
+                            <span>18 Dic Feb 2024 / Procampo</span>
+                            <p>Los factores que impactaron en el comportamiento negativo fueron el fenómeno de El Niño, la crisis política y no tener un marco jurídico que promueva esa actividad económica, indicó Adex. Las agroexportaciones peruanas registraron más de US$ 7,503 millones entre enero y octubre, una caída de...</p>
+                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
         </div>
