@@ -1,0 +1,143 @@
+  /* general styling */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Agrega posición relativa para que el z-index funcione */
+    z-index: 1; /* Ajusta el z-index para que esté por encima de la imagen de fondo */
+}
+
+/* form styling */
+.form-container {
+    background-color: #77d285;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Añade posición relativa para que el z-index funcione */
+    z-index: 2; /* Ajusta el z-index para que esté por encima de la imagen de fondo */
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.acceso-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.acceso-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px; /* Ajusta la posición del icono */
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 16px;
+    color: #ccc;
+}
+
+.input-field input[type="text"],
+.input-field input[type="password"] {
+    width: calc(100% - 0px); /* Calcula el ancho del input para dejar espacio para el icono */
+    padding: 10px; /* Ajusta el espacio alrededor del texto */
+    padding-left: 30px; /* Añade espacio a la izquierda para el icono */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+
+.input-field input[type="text"]:focus,
+.input-field input[type="password"]:focus {
+    border-color: #aaa;
+}
+
+/* select styling */
+.custom-select {
+    width: 100%;
+    padding: 13px 35px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    text-align: left;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    border-color: #aaa;
+}
+
+/* button styling */
+.btn-field {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-field button {
+    padding: 10px 50px; 
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-field button:hover {
+    background-color: #333;
+}
+
+#signUp {
+    background-color: #04BD7D;
+}
+
+#signUp:hover {
+    background-color: #7e91e3;
+}
+
+.disable {
+    background-color: #797676;
+    cursor: not-allowed;
+}
