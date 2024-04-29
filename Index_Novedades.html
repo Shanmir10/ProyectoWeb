@@ -158,9 +158,41 @@
             height: 400px;
             object-fit: cover;
         }
+        .menu{
+            display: flex;
+        }
+        .menu a {
+            margin-right: 20px; /* Espacio entre cada elemento del menú */
+            text-decoration: none; /* Quitar subrayado de los enlaces */
+            color: #150c0c; /* Color del texto del menú */
+        }
+
+        .menu a:hover {
+            text-decoration: underline; /* Subrayar enlaces al pasar el mouse por encima */
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(48, 211, 192); /* Color de fondo del encabezado */
+            color: #1c1818; /* Color del texto */
+        }
+ 
     </style>
 </head>
-
+<body>
+    <div class="header">
+        <div class="menu">
+          <a href="Index_Inicio.html" title="Inicio"><b>INICIO</b></a>
+          <a href="Index_Nosotros.html" title="¿Quiénes somos?"><b>NOSOTROS</b></a>
+          <a href="Index_Productos.html" title="Productos"><b>PRODUCTOS</b></a>
+          <a href="Index_Novedades.html" title="Novedades"><b>NOVEDADES</b></a>
+          <a href="Index_Accesos.html" title="Accesos"><b>ACCESOS</b></a>
+        </div>
+      </div>
+      
+</body>
     <body>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
