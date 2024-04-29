@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro PROCAMPO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("imagenes/agri3.jpg"); /* Reemplaza 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(22, 68, 160, 0.2);
+            border-top: 5px solid #439598; /* Grosor en la parte superior */
+            border-bottom: 5px solid #1e2020; /* Grosor en la parte inferior */
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #44b47c; /* Cambia el color del texto */
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #5f6562;
+        }
+
+        .row {
+            margin-bottom: 10px;
+            color: #5f6562;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            display: inline-block; /* Para que los íconos aparezcan correctamente */
+        }
+
+        button:hover {
+            background-color: #3b8892; /* Cambia el color del botón al pasar el cursor */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>INSCRIPCIÓN PORTAL PROCAMPO</h1>
+        <h3> <center>REGISTRO DE CLIENTES</center></h3>
+        <form id="registroForm" action="" method="post">
+            <div class="row">
+                <label for="tipoDocumento">Tipo documento identidad</label>
+                <select id="tipoDocumento" name="tipoDocumento" required>
+                    <option value="">[SELECCIONE]</option>
+                    <option value="04">CARNET DE EXTRANJERIA</option>
+                    <option value="03">CARNET DE FUERZAS ARMADAS</option>
+                    <option value="02">CARNET DE FUERZAS POLICIALES</option>
+                    <option value="B">DOC.IDENT.PAIS.RESIDENCIA-NO.D</option>
+                    <option value="05">LIBRETA - CEDULA TRIBUTARIA</option>
+                    <option value="01">LIBRETA ELECTORAL O D.N.I.</option>
+                    <option value="07">PASAPORTE</option>
+                    <option value="06">R.U.C.</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="numeroDocumento">N° documento</label>
+                <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            </div>
+            <div class="row">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="row">
+                <label for="apellidoPaterno">Apellido Paterno</label>
+                <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+            </div>
+            <div class="row">
+                <label for="apellidoMaterno">Apellido Materno</label>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+            </div>
+            <div class="row">
+                <label for="correoElectronico">Correo electrónico</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" required>
+            </div>
+            <div class="row">
+                <label for="contrasena">Ingrese su contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="row">
+                <label for="confirmarContrasena">Re Ingrese su contraseña</label>
+                <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+            </div>
+            <div class="row" style="text-align: center;">
+                <button type="submit"><i class="fas fa-save"></i> Grabar</button>
+                <button type="button" id="signUp" onclick="window.location.href='Index_Inscripcion.html'"><i class="fas fa-arrow-left"></i> Regresar</button>
+            </div>   
+        </form>
+    </div>
+</body>
+</html>
