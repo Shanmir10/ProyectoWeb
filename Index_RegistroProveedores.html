@@ -11,7 +11,7 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("imagenes/agri3.jpg"); /* Reemplaza 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+            background-image: url("imagenes/mango.avif"); /* Reemplaza 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
@@ -19,19 +19,19 @@
 
         .container {
             width: 500px;
-            margin: 50px auto;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 5px;
             background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(22, 68, 160, 0.2);
-            border-top: 5px solid #0e0f0f; /* Grosor en la parte superior */
-            border-bottom: 5px solid #141414; /* Grosor en la parte inferior */
+            border-top: 5px solid #0f1010; /* Grosor en la parte superior */
+            border-bottom: 5px solid #1f1010; /* Grosor en la parte inferior */
         }
         
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            color: #383e3b; /* Cambia el color del texto */
+            color: #555454; /* Cambia el color del texto */
         }
 
         h3 {
@@ -62,7 +62,7 @@
         }
         
         button {
-            background-color: #175879;
+            background-color: #5e5ad1;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -72,15 +72,23 @@
         }
 
         button:hover {
-            background-color: #3bbb55; /* Cambia el color del botón al pasar el cursor */
+            background-color: #27c171; /* Cambia el color del botón al pasar el cursor */
         }
-    </style> 
+   
+        .row {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+      
+
+
+    </style>
 </head>
 
 <body>
     <div class="container">
         <h1>INSCRIPCIÓN PORTAL PROCAMPO</h1>
-        <h3> <center>REGISTRO DE CLIENTES</center></h3>
+        <h3> <center>REGISTRO DE PROVEEDORES</center></h3>
         <form id="registroForm" action="" method="post">
             <div class="row">
                 <label for="tipoDocumento">Tipo documento identidad</label>
@@ -123,7 +131,7 @@
             <div class="row">
                 <label for="confirmarContrasena">Re Ingrese su contraseña</label>
                 <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
-            </div>
+            </div> 
             <div class="row" style="text-align: center;">
                 <button type="submit"><i class="fas fa-save"></i> Grabar</button>
                 <button type="button" id="signUp" onclick="window.location.href='Index_Inscripcion.html'"><i class="fas fa-arrow-left"></i> Regresar</button>
