@@ -1,129 +1,559 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procampo - Productos</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <style>
-      
-        .fila img {
-            width: 270px; 
-            height: auto; 
-          
-        }
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styleProductos.css">
 
-        .fila {
-            text-align: center; 
 
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            color: white;
-            padding: 20px;
-        }
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-       .header {
-            background-color:#333;
-            color: white;
-            padding: 20px;
-        }  
-        
-        table {
-            width: 100%; 
-            border-radius: 3px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-         border: 2px solid #333; 
-         padding: 20px;
-         background-color: #417983;
-         text-align: center; 
-        }
-        
-    </style>
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
-  <table border="2">
-    <tr> 
-    <td colspan="2" align="center"class="header"><h1>CATEGORÍAS DEL PRODUCTO</h1></td>
-    </tr>
-    <tr>
-       <td align="center"><h3>Agroquímicos</h3></td>
-       <td>
-         <div class="fila">
-           <img src="./imagenes/pro1.jpg" alt="Agroquímicos">
-           <img src="./imagenes/pro2.jpg"  alt="Agroquímicos">
-           <img src="./imagenes/pro3.jpg" alt="Agroquímicos">
-           <img src="./imagenes/pro4.jpg" alt="Agroquímicos">
-         </div>
-       </td>
-    </tr> 
-    <tr>
-        <td align="center"><h3>Acidificantes con Indicador de ph</h3></td>
-        <td>
-          <div class="fila">
-            <img  src="./imagenes/pro5.jpg" alt="Acidificantes">
-            <img  src="./imagenes/pro6.jpg" alt="Acidificantes">
-          </div>
-        </td>
-     </tr>
-     <tr>
-        <td align="center"><h3>Ácido Húmico</h3></td>
-        <td>
-          <div class="fila">
-            <img src="./imagenes/pro7.jpg" alt="Ácido Húmico">
-            <img src="./imagenes/pro8.jpg" alt="Ácido Húmico">
-            <img src="./imagenes/pro9.jpg" alt="Ácido Húmico">
-          </div>
-    </td>
-     </tr>
-     <tr>
-        <td align="center"><h3>Adherentes Surfactantes</h3></td>
-        <td>
-          <div class="fila">
-            <img src="./imagenes/pro10.jpg" alt="Adherentes">
-            <img src="./imagenes/pro11.jpg" alt="Adherentes">
-            <img src="./imagenes/pro12.jpg" alt="Adherentes">
-            <img src="./imagenes/pro13.jpg" alt="Adherentes">
-          </div>
-    </td>
-     </tr>
-     <tr>
-        <td align="center"><h3>Bioestimulantes</h3></td>
-        <td>
-          <div class="fila">
-            <img src="./imagenes/pro14.jpg" alt="Bioestimulantes">
-            <img src="./imagenes/pro15.jpg" alt="Bioestimulantes">
-            <img src="./imagenes/pro16.jpg" alt="Bioestimulantes">
-            <img src="./imagenes/pro17.jpg" alt="Bioestimulantes">
-          </div>
-    </td>
-     </tr>
-     <tr>
-        <td align="center"><h3>Fertilizantes Foliares</h3></td>
-        <td>
-          <div class="fila">
-            <img src="./imagenes/pro18.jpg" alt="Fertilizantes">
-            <img src="./imagenes/pro19.jpg" alt="Fertilizantes">
-            <img src="./imagenes/pro20.jpg" alt="Fertilizantes">
-            <img src="./imagenes/pro21.jpg" alt="Fertilizantes">
-          </div>
-    </td>
-     </tr>
-</table>
 
-<div class="contact-info">
-  <p>PROCAMPO</p>
-  <p>Empresa peruana dedicada a la comercialización de insumos agrícolas y soluciones para su cultivo a través de la asesoría de nuestros ingenieros especializados.</p> 
-  <p> Políticas y privacidad</p>
-  <p> Ubícanos: Calle Capitán Salvador Carmona N°216 Urb. Industrial Vulcano - Ate – Lima </p>
-  <p> Email: servicio.cliente@procampo.com.pe </p>
-  </p>Teléfono: (511) 364 7338 - (511) 364 7335 - (511) 364 7333</p>
+<body>
+   <header>
+      <a href="#" class="logo"><img src="imagenes/logo1.png" alt="Logo"></a>
+      <ul class="navmenu">
+          <li><a href="#inicio" style="color: black; font-weight: bold;">INICIO</a></li>
+          <li><a href="#nosotros" style="color: black; font-weight: bold;">NOSOTROS</a></li>
+          <li><a href="#productos" style="color: black; font-weight: bold;">PRODUCTOS</a></li>
+          <li><a href="#novedades" style="color: black; font-weight: bold;">NOVEDADES</a></li>
+          <li><a href="#ubicacion" style="color: black; font-weight: bold;">UBICANOS</a></li>
+          <li><a href="Index_Accesos.html" style="color: black; font-weight: bold;">ACCESOS</a></li>
+      </ul>
+  
+      <div class="nav-icon">
+          <a href="#"><i class='bx bx-search'></i></a>
+          <a href="#"><i class='bx bx-user'></i></a>
+          <a href="#"><i class='bx bx-cart'></i></a>
+          <div class="bx bx-menu" id="menu_icon"></div>
+      </div>
+  </header>
+
+  <section class="main-home">
+      <div class="main-text">
+          <h5>¡Descubre lo Mejor de Procampo!</h5>
+          <h1>¡Exclusiva Venta de los mejores<br> Productos Procampo!</h1>
+          <p>¡Sumérgete en la Excelencia y Calidad!</p>
+          <a href="#" class="main-btn"> Comprar <i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+      <div class="down-arrow">
+          <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+      </div>
+  </section>
+
+   <!-- primera categoria  --> 
+  <div class="container">
+  
+     <h3 class="title">Agroquímicos</h3>
+  
+     <div class="products-container">
+      <div class="product" data-name="p-1">
+        <img src="./imagenes/pro1.jpg" alt="">
+        <h3>AMINOTERRA GREEN X 20 LT</h3>
+        <div class="price">$25.00</div> 
+     </div>
+
+     <div class="product" data-name="p-2">
+        <img src="./imagenes/pro2.jpg"alt="">
+        <h3>AMINOTERRA PLUS ZN X 20 LTS</h3>
+        <div class="price">$20.00</div>
+     </div>
+
+     <div class="product" data-name="p-3">
+        <img src="./imagenes/pro3.jpg"alt="">
+        <h3>ESCUDERO X 1 LT</h3>
+        <div class="price">$18.00</div>
+     </div>
+
+     <div class="product" data-name="p-4">
+        <img src="./imagenes/pro4.jpg" alt="">
+        <h3>KELP WAY ALGAE X 1 LT</h3>
+        <div class="price">$30.00</div>
+     </div>
+
+     <div class="product" data-name="p-5">
+      <img src="./imagenes/n1.png" alt="">
+      <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
+      <div class="price">$30.00</div>
+   </div>
+
+   <div class="product" data-name="p-6">
+      <img src="./imagenes/n2.png" alt="">
+      <h3>BIOAMINO-L X 20 LTS</h3>
+      <div class="price">$30.00</div>
+   </div>
+
 </div>
+</div>
+
+<div class="products-preview">
+
+  <div class="preview" data-target="p-1">
+     <i class="fas fa-times"></i>
+     <img src="./imagenes/pro1.jpg"alt="">
+     <h3>AMINOTERRA GREEN X 20 LT</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+     <div class="price">$25.00</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-2">
+     <i class="fas fa-times"></i>
+     <img src="./imagenes/pro2.jpg" alt="">
+     <h3>AMINOTERRA PLUS ZN X 20 LTSs</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+     <div class="price">$20.00</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-3">
+     <i class="fas fa-times"></i>
+     <img src="./imagenes/pro3.jpg" alt="">
+     <h3>ESCUDERO X 1 LT</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+     <div class="price">$18.00</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-4">
+     <i class="fas fa-times"></i>
+     <img src="./imagenes/pro4.jpg" alt="">
+     <h3>KELP WAY ALGAE X 1 LT</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+     <div class="price">$30.00</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+
+
+<div class="preview" data-target="p-5">
+   <i class="fas fa-times"></i>
+   <img src="./imagenes/n1.png" alt="">
+   <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Aceite natural, obtenido del salmón, con propiedades únicas que promueven el desarrollo de defensa en las plantas.</p>
+   <div class="price">$25.00</div>
+   <div class="buttons">
+      <a href="#" class="buy">buy now</a>
+      <a href="#" class="cart">add to cart</a>
+   </div>
+</div>
+
+<div class="preview" data-target="p-6">
+   <i class="fas fa-times"></i>
+   <img src="./imagenes/n2.png"alt="">
+   <h3>BIOAMINO-L X 20 LTS</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Es una enmienda orgánica líquida que activa la biología del suelo, gracias sus péptidos y polipéptidos de bajo peso molecular, favoreciendo el desarrollo de micro y macroorganismos benéficos</p>
+   <div class="price">$25.00</div>
+   <div class="buttons">
+      <a href="#" class="buy">buy now</a>
+      <a href="#" class="cart">add to cart</a>
+   </div>
+</div>
+</div>
+
+
+<!--segunda categoria-->>
+
+<div class="container_2">
+  
+   <h3 class="title">Acidificantes con Indicador de ph</h3>
+   
+   <div class="products-container">
+      <div class="product" data-name="p-7">
+         <img src="./imagenes/pro5.jpg" alt="">
+         <h3>TRIADA FOLIAR 18-28-8 KG </h3>
+         <div class="price">$25.00</div> 
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="./imagenes/pro6.jpg" alt="">
+         <h3>TRIADA FOLIAR 18-28-8 X 10 KG </h3>
+         <div class="price">$25.00</div> 
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="./imagenes/pro66.png" alt="">
+         <h3>TRIADA FOLIAR 18-45-0 KG</h3>
+         <div class="price">$20.00</div>
+      </div>
+   </div> 
+</div>
+
+<div class="products-preview_2">
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="./imagenes/pro5.jpg" alt="">
+      <h3>TRIADA FOLIAR 18-28-8 KG</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+      <div class="price">$25.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="./imagenes/pro6.jpg" alt="">
+      <h3>TRIADA FOLIAR 18-28-8 X 10 KG</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+      <div class="price">$25.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="./imagenes/pro66.png" alt="">
+      <h3>TRIADA FOLIAR 18-45-0 KG</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+      <div class="price">$20.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+</div>
+
+<!--tercera categoria-->>
+
+ 
+<div class="container_3">
+  
+   <h3 class="title">Ácido Húmico</h3>
+
+   <div class="products-container">
+    <div class="product" data-name="p-10">
+      <img src="./imagenes/pro7.jpg" alt="">
+      <h3>KELP WAY FULVICO X 200 LT</h3>
+      <div class="price">$25.00</div> 
+   </div>
+
+   <div class="product" data-name="p-11">
+      <img src="./imagenes/pro8.jpg"alt="">
+      <h3>KELP WAY HUMICO TECH X 1 LT</h3>
+      <div class="price">$20.00</div>
+   </div>
+
+   <div class="product" data-name="p-12">
+      <img src="./imagenes/pro9.jpg"alt="">
+      <h3>KELP WAY HUMIKELP X 1LT</h3>
+      <div class="price">$18.00</div>
+   </div>
+
+</div>
+</div>
+
+<div class="products-preview_3">
+
+<div class="preview" data-target="p-10">
+   <i class="fas fa-times"></i>
+   <img src="./imagenes/pro7.jpg"alt="">
+   <h3>KELP WAY FULVICO X 200 LT</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Ha sido formulado para su aplicación durante el crecimiento de la planta, prefloración y formación de fruto.</p>
+   <div class="price">$25.00</div>
+   <div class="buttons">
+      <a href="#" class="buy">buy now</a>
+      <a href="#" class="cart">add to cart</a>
+   </div>
+</div>
+
+<div class="preview" data-target="p-11">
+   <i class="fas fa-times"></i>
+   <img src="./imagenes/pro8.jpg" alt="">
+   <h3>KELP WAY HUMICO TECH X 1 LT</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Ha sido formulada para su aplicación durante momentos claves del cultivo.</p>
+   <div class="price">$20.00</div>
+   <div class="buttons">
+      <a href="#" class="buy">buy now</a>
+      <a href="#" class="cart">add to cart</a>
+   </div>
+</div>
+
+<div class="preview" data-target="p-12">
+   <i class="fas fa-times"></i>
+   <img src="./imagenes/pro9.jpg" alt="">
+   <h3>KELP WAY HUMIKELP X 1LT</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Estimula el desarrollo foliar y promueve el crecimiento del sistema radicular.</p>
+   <div class="price">$18.00</div>
+   <div class="buttons">
+      <a href="#" class="buy">buy now</a>
+      <a href="#" class="cart">add to cart</a>
+   </div>
+</div>
+</div>
+
+<!-- contactos -->
+<section class="contact">
+   <div class="first-info contact-info">
+      <br>
+      <br>
+      <br>
+      <h4>PROCAMPO</h4>
+       <br>
+       <p>Empresa peruana dedicada a la comercialización de insumos agrícolas y soluciones para su cultivo a través de la asesoría de nuestros ingenieros especializados.</p>
+       <div class="Social-icon">
+           <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+           <a href="#"><i class='bx bxl-twitter'></i></a>
+           <a href="#"><i class='bx bxl-instagram'></i></a>
+           <a href="#"><i class='bx bxl-youtube'></i></a>
+       </div>
+       <br>
+       <img src="imagenes/logo1.png" alt="Logo PROCAMPO">
+   </div>
+
+   <div class="second-info contact-info">
+      <br>
+      <br>
+      <br>
+      <h4>UBICANOS</h4>
+       <br>
+       <h3><i class="fas fa-map-marker-alt"></i> Calle Capitán Salvador Carmona N°216 Urb. Industrial Vulcano - Ate – Lima</h3>
+       <h3><i class="fas fa-envelope"></i> servicio.cliente@procampo.com.pe</h3>
+       <h3><i class="fas fa-phone"></i> (511) 364 7338 - (511) 364 7335 - (511) 364 7333</h3>
+       <br>
+       <br>
+       <img src="imagenes/mapa.png" alt="" style="width: 220px; height:150px;">
+
+   
+      </div>
+
+   <div class="third-info contact-info">
+      <br>
+      <br>
+      <br>
+      <h4>ASOCIADOS</h4>
+       <br>
+       <img src="imagenes/ASO.png" alt="Logo Asociados">
+       <img src="imagenes/aso1.png" alt="Logo Asociados">
+   </div> 
+
+   <div class="subscribe contact-info">
+      <br>
+      <br>
+      <br>
+       <h4>SUSCRÍBETE</h4>
+       <br>
+       <div class="subscribe-form">
+         <br>
+         <br>
+     
+           <input type="email" placeholder="Ingresa tu correo electrónico">
+           <button type="submit">Suscribir</button>
+       </div>
+   </div>
+</section>
+
+
+<!-- JavaScript para la primera categoría -->
+<script>
+   let previewContainer1 = document.querySelector('.products-preview');
+   let previewBoxes1 = previewContainer1.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer1.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes1.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes1.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer1.style.display = 'none';
+     };
+   });
+ </script>
+ 
+ <!-- JavaScript para la segunda categoría -->
+ <script>
+   let previewContainer2 = document.querySelector('.products-preview_2');
+   let previewBoxes2 = previewContainer2.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container_2 .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer2.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes2.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes2.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer2.style.display = 'none';
+     };
+   });
+ </script>
+ 
+ <!-- JavaScript para la tercera categoría -->
+ <script>
+   let previewContainer3 = document.querySelector('.products-preview_3');
+   let previewBoxes3 = previewContainer3.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container_3 .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer3.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes3.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes3.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer3.style.display = 'none';
+     };
+   });
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function(){
+   header.classList.toggle("sticky",this.window.scrollY)
+})
+
+ </script>
+ 
+
+
 
 </body>
 </html>

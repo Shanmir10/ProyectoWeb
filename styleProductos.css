@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+} 
+
+body {
+   background: #eee;
+}
+
+.container,
+.container_2,
+.container_3 {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 3rem 2rem;
+}
+
+.container .title,
+.container_2 .title,
+.container_3 .title {
+   font-size: 3.5rem;
+   color: #444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .products-container,
+.container_2 .products-container,
+.container_3 .products-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+
+.container .products-container .product,
+.container_2 .products-container .product,
+.container_3 .products-container .product {
+   text-align: center;
+   padding: 3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover,
+.container_2 .products-container .product:hover,
+.container_3 .products-container .product:hover {
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .products-container .product img,
+.container_2 .products-container .product img,
+.container_3 .products-container .product img {
+   height: 25rem;
+}
+
+.container .products-container .product:hover img,
+.container_2 .products-container .product:hover img,
+.container_3 .products-container .product:hover img {
+   transform: scale(.9);
+}
+
+.container .products-container .product h3,
+.container_2 .products-container .product h3,
+.container_3 .products-container .product h3 {
+   padding: .5rem 0;
+   font-size: 2rem;
+   color: #444;
+}
+
+.container .products-container .product:hover h3,
+.container_2 .products-container .product:hover h3,
+.container_3 .products-container .product:hover h3 {
+   color: #27ae60;
+}
+
+.container .products-container .product .price,
+.container_2 .products-container .product .price,
+.container_3 .products-container .product .price {
+   font-size: 2rem;
+   color: #444;
+}
+
+.products-preview,
+.products-preview_2,
+.products-preview_3 {
+   position: fixed;
+   display: flex;
+   top: 0;
+   left: 0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview,
+.products-preview_2 .preview,
+.products-preview_3 .preview {
+   display: none;
+   padding: 2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin: 2rem;
+   width: 40rem;
+}
+
+.products-preview .preview.active,
+.products-preview_2 .preview.active,
+.products-preview_3 .preview.active {
+   display: inline-block;
+}
+
+.products-preview .preview img,
+.products-preview_2 .preview img,
+.products-preview_3 .preview img {
+   height: 30rem;
+}
+
+.products-preview .preview .fa-times,
+.products-preview_2 .preview .fa-times,
+.products-preview_3 .preview .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1.5rem;
+   cursor: pointer;
+   color: #444;
+   font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover,
+.products-preview_2 .preview .fa-times:hover,
+.products-preview_3 .preview .fa-times:hover {
+   transform: rotate(90deg);
+}
+
+
+.products-preview .preview h3,
+.products-preview_2 .preview h3,
+.products-preview_3 .preview h3 {
+   color: #444;
+   padding: .5rem 0;
+   font-size: 2.5rem;
+}
+
+.products-preview .preview .stars,
+.products-preview_2 .preview .stars,
+.products-preview_3 .preview .stars {
+   padding: 1rem 0;
+   font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i,
+.products-preview_2 .preview .stars i,
+.products-preview_3 .preview .stars i {
+   color: #27ae60;
+}
+
+.products-preview .preview .stars span,
+.products-preview_2 .preview .stars span,
+.products-preview_3 .preview .stars span {
+   color: #999;
+}
+
+.products-preview .preview p,
+.products-preview_2 .preview p,
+.products-preview_3 .preview p {
+   line-height: 1.5;
+   padding: 1rem 0;
+   font-size: 1.6rem;
+   color: #777;
+}
+
+.products-preview .preview .price,
+.products-preview_2 .preview .price,
+.products-preview_3 .preview .price {
+   padding: 1rem 0;
+   font-size: 2.5rem;
+   color: #27ae60;
+}
+
+.products-preview .preview .buttons,
+.products-preview_2 .preview .buttons,
+.products-preview_3 .preview .buttons {
+   display: flex;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a,
+.products-preview_2 .preview .buttons a,
+.products-preview_3 .preview .buttons a {
+   flex: 1 1 16rem;
+   padding: 1rem;
+   font-size: 1.8rem;
+   color: #444;
+   border: .1rem solid #444;
+}
+
+.products-preview .preview .buttons a.cart,
+.products-preview_2 .preview .buttons a.cart,
+.products-preview_3 .preview .buttons a.cart {
+   background: #444;
+   color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover,
+.products-preview_2 .preview .buttons a.cart:hover,
+.products-preview_3 .preview .buttons a.cart:hover {
+   background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover,
+.products-preview_2 .preview .buttons a.buy:hover,
+.products-preview_3 .preview .buttons a.buy:hover {
+   background: #444;
+   color: #fff;
+}
+
+@media (max-width:991px){
+   html{
+      font-size: 55%;
+   }
+}
+
+@media (max-width:768px){
+   .products-preview .preview img,
+   .products-preview_2 .preview img,
+   .products-preview_3 .preview img {
+      height: 25rem;
+   }
+}
+
+@media (max-width:450px){
+   html{
+      font-size: 50%;
+   }
+}
+
+
+
+/*parte de menu*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: 'Jost', sans-serif;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+   height: 80px; /* Ajusta la altura según sea necesario */
+   position: fixed;
+   width: calc(100% - 0px); /* Ancho del 100% menos el padding izquierdo y derecho */
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 20px; /* Padding superior e inferior 20px, izquierda y derecha 20px */
+}
+
+
+.logo img {
+   max-width: 70px;
+   height: 30%;
+   border-radius: 100%; 
+   margin: 5px 170px;
+}
+
+.navmenu{
+   display: flex;
+}
+.navmenu a{
+  color: #2c2c2c;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px  20px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+.navmenu a:hover{
+   color: #EE1C47; ;
+}
+.nav-icon{
+   display: flex;
+   align-items: center;
+}
+.nav-icon i{
+   margin-right: 20px;
+   color:#2c2c2c;
+   font-size: 25px;
+   font-weight: 400;
+   transition: all  .42s ease;
+}
+.nav-icon i:hover{
+   transform: scale(1.1);
+   color: #EE1C47;
+}
+#menu_icon{
+   font-size: 35px;
+   color: #2c2c2c;
+   z-index: 10001;
+   cursor: pointer;
+}
+section{
+   padding: 5% 10%;
+}
+.main-home{
+   width: 100%;
+   height: 100vh;
+   background-image: url(imagenes/img34.jpg);
+   background-position: center;
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   align-items: center;
+  
+}
+.main-text h5{
+   color: #503079;
+   font-size: 35px;
+   text-transform: capitalize;
+   font-weight: 500;
+ 
+}
+
+.main-text h1{
+   color: #121111;
+   font-size: 65px;
+   text-transform: capitalize;
+   line-height: 1.1;
+   font-weight: 600;
+   margin: 6px 0 10px;
+}
+.main-text p{
+   color:  #021a11;
+   font-size: 25px;
+   font-style: italic;
+   margin-bottom: 20px;
+}
+.main-btn{
+   display: inline-block;
+   color: #111;
+   font-size: 30px;
+   font-weight: 500;
+   text-transform: capitalize;
+   border: 2px solid #111;
+   padding: 12px 25px;
+   transform: all .42s ease;
+}
+.main-btn:hover{
+   background-color: #000;
+   color: #fff;
+}
+.down-arrow{
+   vertical-align: middle;
+}
+.down-arrow{
+   position: absolute;
+   top: 85%;
+   right: 11%;
+}
+.down i{
+   font-size: 30px;
+   color: #2c2c2c;
+   border: 2px solid #2c2c2c;
+   border-radius: 50px;
+   padding: 12px 12px;
+}
+.down i:hover{
+   background-color: #2c2c2c;
+   color: #fff;
+   transition: all .42s ease;
+}
+
+header.sticky{
+   background: #fff;
+   padding: 5px 5%;
+   box-shadow: 0px 0px 10px rgba(0 0 0 /10%);
+}
+
+/*contactos*/
+/* Estilo general de la sección de contactos */
+.contact {
+   background-color: #65b687;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 120px; /* Reducir el espacio vertical y horizontal */
+}
+
+/* Estilo de las columnas */
+.contact-info {
+   max-width: 300px;
+   text-align: center;
+   margin: 50px; /* Eliminar el margen predeterminado */
+}
+
+/* Estilo de las imágenes */
+.contact-info img {
+   width: 100%;
+   border-radius: 50%;
+   max-width: 150px;
+   height: auto;
+   display: block;
+   margin: 0 auto 20px;
+}
+
+/* Estilo del texto */
+.contact-info h4 {
+   font-size: 24px;
+   font-weight: bold;
+   color: #333;
+   margin: 0;
+   text-align: center;
+}
+
+.contact-info p,
+.contact-info h3 {
+   font-size: 16px;
+   color: #666;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+/* Estilo de los iconos sociales */
+.contact-info .Social-icon {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.contact-info .Social-icon a {
+   margin-right: 10px;
+   color: #333;
+   font-size: 24px;
+   transition: color 0.3s ease;
+}
+
+/* Efecto de transición al pasar el ratón sobre los iconos */
+.contact-info .Social-icon a:hover {
+   color: #b5477a;
+}
+
+/* Estilo general de la sección de suscripción */
+.subscribe .contact-info {
+   flex: 0 0 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #65b687;
+   padding: 10px;
+
+   width: 100%;
+   border-radius: 50%;
+   max-width: 150px;
+   height: auto;
+   display: block;
+   margin: 0 auto 20px;
+}
+
+.subscribe h1 {
+   margin-bottom: 10px;
+}
+
+.subscribe-form input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+}
+
+.subscribe-form button {
+   width: 100%;
+   padding: 10px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+}
+
+.subscribe-form button:hover {
+   background-color: #0056b3;
+}
