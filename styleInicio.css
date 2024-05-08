@@ -24,17 +24,7 @@ section{
     position: relative;
     background-size: cover;
     padding: 50px;
-}
-
-section::after{
-    content: "";
-    position: absolute;
-    background-color: #000;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 section h1{
