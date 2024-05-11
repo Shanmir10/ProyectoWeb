@@ -23,6 +23,7 @@
 </head>
 
 <body>
+   <!--para la parte del menu-->
    <header>
       <a href="#" class="logo"><img src="imagenes/logo1.png" alt="Logo"></a>
       <ul class="navmenu">
@@ -53,12 +54,22 @@
           <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
       </div>
   </section>
+   <!--para botones de categoria-->
+   
+   <div class="container-button">
+      <p>EXPLORA LOS DIFERENTES PRODUCTOS QUE TENEMOS PARA TI</p>
+      <div class="filter_buttons">
+         <button onclick="setActive(this, 'all')">MOSTRAR TODAS LAS CATEGORIAS</button>
+        <button onclick="setActive(this, 'container')">AGROQUÍMICOS</button>
+        <button onclick="setActive(this, 'container_2')">ACIDIFICANTES CON INDICADOR DE PH </button>
+        <button onclick="setActive(this, 'container_3')">ÁCIDO HÚMICO</button>
+      </div>
+    </div>
 
+  
    <!-- primera categoria  --> 
   <div class="container">
-  
-     <h3 class="title">Agroquímicos</h3>
-  
+   <h3 class="title">Agroquímicos</h3>
      <div class="products-container">
       <div class="product" data-name="p-1">
         <img src="./imagenes/pro1.jpg" alt="">
@@ -95,7 +106,6 @@
       <h3>BIOAMINO-L X 20 LTS</h3>
       <div class="price">$30.00</div>
    </div>
-
 </div>
 </div>
 
@@ -317,10 +327,8 @@
 <!--tercera categoria-->>
 
  
-<div class="container_3">
-  
+<div class="container_3"> 
    <h3 class="title">Ácido Húmico</h3>
-
    <div class="products-container">
     <div class="product" data-name="p-10">
       <img src="./imagenes/pro7.jpg" alt="">
