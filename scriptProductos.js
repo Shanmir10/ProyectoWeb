@@ -76,11 +76,87 @@
        previewContainer3.style.display = 'none';
      };
    });
+   //  JavaScript para la cuarta categoría -->
+
+   let previewContainer4 = document.querySelector('.products-preview_4');
+   let previewBoxes4 = previewContainer4.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container_4 .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer4.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes4.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes4.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer4.style.display = 'none';
+     };
+   });
+
+   //  JavaScript para la quinta categoría -->
+
+   let previewContainer5 = document.querySelector('.products-preview_5');
+   let previewBoxes5 = previewContainer5.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container_5 .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer5.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes5.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes5.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer5.style.display = 'none';
+     };
+   });
+
+   //  JavaScript para la sexta categoría -->
+
+   let previewContainer6 = document.querySelector('.products-preview_6');
+   let previewBoxes6 = previewContainer6.querySelectorAll('.preview');
+ 
+   document.querySelectorAll('.container_6 .product').forEach(product => {
+     product.onclick = () => {
+       previewContainer6.style.display = 'flex';
+       let name = product.getAttribute('data-name');
+       previewBoxes6.forEach(preview => {
+         let target = preview.getAttribute('data-target');
+         if (name == target) {
+           preview.classList.add('active');
+         }
+       });
+     };
+   });
+ 
+   previewBoxes6.forEach(close => {
+     close.querySelector('.fa-times').onclick = () => {
+       close.classList.remove('active');
+       previewContainer6.style.display = 'none';
+     };
+   });
+
 
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function(){
    header.classList.toggle("sticky",this.window.scrollY)
+
 })
 
 //CODIGO DE BOTONES DE CATEGORIA
@@ -98,7 +174,7 @@ function setActive(button, targetContainer) {
   button.classList.add('active');
   
   // Mostrar solo el contenedor correspondiente a la categoría seleccionada
-  var containers = document.querySelectorAll('.container, .container_2, .container_3');
+  var containers = document.querySelectorAll('.container, .container_2, .container_3,.container_4,.container_5,.container_6');
   containers.forEach(function(container) {
     container.style.display = 'none';
   });
