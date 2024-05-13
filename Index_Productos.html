@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styleProductos.css">
-  
+
 
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet"
-   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
@@ -27,1209 +30,1227 @@
    <header>
       <a href="#" class="logo"><img src="imagenes/logo1.png" alt="Logo"></a>
       <ul class="navmenu">
-          <li><a href="Index_Inicio.html" style="color: black; font-weight: bold;">INICIO</a></li>
-          <li><a href="Index_Nosotros.html" style="color: black; font-weight: bold;">NOSOTROS</a></li>
-          <li><a href="Index_Productos.html" style="color: black; font-weight: bold;">PRODUCTOS</a></li>
-          <li><a href="Index_Novedades.html" style="color: black; font-weight: bold;">NOVEDADES</a></li>
-          <li><a href="#" style="color: black; font-weight: bold;">UBICANOS</a></li>
-          <li><a href="Index_Accesos.html" style="color: black; font-weight: bold;">ACCESOS</a></li>
+         <li><a href="Index_Inicio.html" style="color: black; font-weight: bold;">INICIO</a></li>
+         <li><a href="Index_Nosotros.html" style="color: black; font-weight: bold;">NOSOTROS</a></li>
+         <li><a href="Index_Productos.html" style="color: black; font-weight: bold;">PRODUCTOS</a></li>
+         <li><a href="Index_Novedades.html" style="color: black; font-weight: bold;">NOVEDADES</a></li>
+         <li><a href="#" style="color: black; font-weight: bold;">UBICANOS</a></li>
+         <li><a href="Index_Accesos.html" style="color: black; font-weight: bold;">ACCESOS</a></li>
       </ul>
-  
-      <div class="nav-icon">
-          <a href="#"><i class='bx bx-search'></i></a>
-          <a href="#"><i class='bx bx-user'></i></a>
-          <a href="#"><i class='bx bx-cart'></i></a>
-          <div class="bx bx-menu" id="menu_icon"></div>
-      </div>
-  </header>
 
-  <section class="main-home">
+      <div class="nav-icon">
+         <a href="#"><i class='bx bx-search'></i></a>
+         <a href="#"><i class='bx bx-user'></i></a>
+         <a href="#"><i class='bx bx-cart'></i></a>
+         <div class="bx bx-menu" id="menu_icon"></div>
+      </div>
+   </header>
+
+   <section class="main-home">
       <div class="main-text">
-          <h5>¡Descubre lo Mejor de Procampo!</h5>
-          <h1>¡Exclusiva Venta de los mejores<br> Productos Procampo!</h1>
-          <p>¡Sumérgete en la Excelencia y Calidad!</p>
-          <a href="#" class="main-btn"> Comprar <i class="bx bx-right-arrow-alt"></i></a>
+         <h5>¡Descubre lo Mejor de Procampo!</h5>
+         <h1>¡Exclusiva Venta de los mejores<br> Productos Procampo!</h1>
+         <p>¡Sumérgete en la Excelencia y Calidad!</p>
+         <a href="#" class="main-btn"> Comprar <i class="bx bx-right-arrow-alt"></i></a>
       </div>
       <div class="down-arrow">
-          <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+         <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
       </div>
-  </section>
+   </section>
    <!--para botones de categoria-->
-   
+
    <div class="container-button">
       <p>EXPLORA LOS DIFERENTES PRODUCTOS QUE TENEMOS PARA TI</p>
       <div class="filter_buttons">
          <button onclick="setActive(this, 'all')">MOSTRAR TODAS LAS CATEGORIAS</button>
-        <button onclick="setActive(this, 'container')">AGROQUÍMICOS</button>
-        <button onclick="setActive(this, 'container_2')">ACIDIFICANTES CON INDICADOR DE PH </button>
-        <button onclick="setActive(this, 'container_3')">ÁCIDO HÚMICO</button>
-        <button onclick="setActive(this, 'container_4')">ADHERENTES SURFACTANTES HUMECTANTES</button>
-        <button onclick="setActive(this, 'container_5')">BIOESTIMULANTES </button>
-        <button onclick="setActive(this, 'container_6')">FERTILIZANTES FOLIARES</button>
+         <button onclick="setActive(this, 'container')">AGROQUÍMICOS</button>
+         <button onclick="setActive(this, 'container_2')">ACIDIFICANTES CON INDICADOR DE PH </button>
+         <button onclick="setActive(this, 'container_3')">ÁCIDO HÚMICO</button>
+         <button onclick="setActive(this, 'container_4')">ADHERENTES SURFACTANTES HUMECTANTES</button>
+         <button onclick="setActive(this, 'container_5')">BIOESTIMULANTES </button>
+         <button onclick="setActive(this, 'container_6')">FERTILIZANTES FOLIARES</button>
       </div>
-    </div>
-
-  
-   <!-- primera categoria  --> 
-  <div class="container">
-   <h3 class="title">Agroquímicos</h3>
-     <div class="products-container">
-      <div class="product" data-name="p-1">
-        <img src="./imagenes/pro1.jpg" alt="">
-        <h3>AMINOTERRA GREEN X 20 LT</h3>
-        <div class="price">$25.00</div> 
-     </div>
-
-     <div class="product" data-name="p-2">
-        <img src="./imagenes/pro2.jpg"alt="">
-        <h3>AMINOTERRA PLUS ZN X 20 LTS</h3>
-        <div class="price">$20.00</div>
-     </div>
-
-     <div class="product" data-name="p-3">
-        <img src="./imagenes/pro3.jpg"alt="">
-        <h3>ESCUDERO X 1 LT</h3>
-        <div class="price">$18.00</div>
-     </div>
-
-     <div class="product" data-name="p-4">
-        <img src="./imagenes/pro4.jpg" alt="">
-        <h3>KELP WAY ALGAE X 1 LT</h3>
-        <div class="price">$30.00</div>
-     </div>
-
-     <div class="product" data-name="p-5">
-      <img src="./imagenes/n1.png" alt="">
-      <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
-      <div class="price">$30.00</div>
    </div>
 
-   <div class="product" data-name="p-6">
-      <img src="./imagenes/n2.png" alt="">
-      <h3>BIOAMINO-L X 20 LTS</h3>
-      <div class="price">$30.00</div>
+
+   <!-- primera categoria  -->
+   <div class="container">
+      <h3 class="title">Agroquímicos</h3>
+      <div class="products-container">
+         <div class="product" data-name="p-1">
+            <img src="./imagenes/pro1.jpg" alt="">
+            <h3>AMINOTERRA GREEN X 20 LT</h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-2">
+            <img src="./imagenes/pro2.jpg" alt="">
+            <h3>AMINOTERRA PLUS ZN X 20 LTS</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-3">
+            <img src="./imagenes/pro3.jpg" alt="">
+            <h3>ESCUDERO X 1 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-4">
+            <img src="./imagenes/pro4.jpg" alt="">
+            <h3>KELP WAY ALGAE X 1 LT</h3>
+            <div class="price">$30.00</div>
+         </div>
+
+         <div class="product" data-name="p-5">
+            <img src="./imagenes/n1.png" alt="">
+            <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
+            <div class="price">$30.00</div>
+         </div>
+
+         <div class="product" data-name="p-6">
+            <img src="./imagenes/n2.png" alt="">
+            <h3>BIOAMINO-L X 20 LTS</h3>
+            <div class="price">$30.00</div>
+         </div>
+      </div>
    </div>
-</div>
-</div>
 
-<div class="products-preview">
+   <div class="products-preview">
 
-  <div class="preview" data-target="p-1">
-     <i class="fas fa-times"></i>
-     <img src="./imagenes/pro1.jpg"alt="">
-     <h3>AMINOTERRA GREEN X 20 LT</h3>
-     <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span>( 250 )</span>
-     </div>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-     <div class="price">$25.00</div>
-     <div class="buttons">
-        <a href="#" class="buy">buy now</a>
-        <a href="#" class="cart">add to cart</a>
-     </div>
-  </div>
+      <div class="preview" data-target="p-1">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro1.jpg" alt="">
+         <h3>AMINOTERRA GREEN X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
 
-  <div class="preview" data-target="p-2">
-     <i class="fas fa-times"></i>
-     <img src="./imagenes/pro2.jpg" alt="">
-     <h3>AMINOTERRA PLUS ZN X 20 LTSs</h3>
-     <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span>( 250 )</span>
-     </div>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-     <div class="price">$20.00</div>
-     <div class="buttons">
-        <a href="#" class="buy">buy now</a>
-        <a href="#" class="cart">add to cart</a>
-     </div>
-  </div>
+      <div class="preview" data-target="p-2">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro2.jpg" alt="">
+         <h3>AMINOTERRA PLUS ZN X 20 LTSs</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
 
-  <div class="preview" data-target="p-3">
-     <i class="fas fa-times"></i>
-     <img src="./imagenes/pro3.jpg" alt="">
-     <h3>ESCUDERO X 1 LT</h3>
-     <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span>( 250 )</span>
-     </div>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-     <div class="price">$18.00</div>
-     <div class="buttons">
-        <a href="#" class="buy">buy now</a>
-        <a href="#" class="cart">add to cart</a>
-     </div>
-  </div>
+      <div class="preview" data-target="p-3">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro3.jpg" alt="">
+         <h3>ESCUDERO X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
 
-  <div class="preview" data-target="p-4">
-     <i class="fas fa-times"></i>
-     <img src="./imagenes/pro4.jpg" alt="">
-     <h3>KELP WAY ALGAE X 1 LT</h3>
-     <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span>( 250 )</span>
-     </div>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-     <div class="price">$30.00</div>
-     <div class="buttons">
-        <a href="#" class="buy">buy now</a>
-        <a href="#" class="cart">add to cart</a>
-     </div>
-  </div>
+      <div class="preview" data-target="p-4">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro4.jpg" alt="">
+         <h3>KELP WAY ALGAE X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$30.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
 
 
 
-<div class="preview" data-target="p-5">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/n1.png" alt="">
-   <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
+      <div class="preview" data-target="p-5">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/n1.png" alt="">
+         <h3>BIOIL-S (ENHANCE) X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Aceite natural, obtenido del salmón, con propiedades únicas que promueven el desarrollo de defensa en las
+            plantas.</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-6">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/n2.png" alt="">
+         <h3>BIOAMINO-L X 20 LTS</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Es una enmienda orgánica líquida que activa la biología del suelo, gracias sus péptidos y polipéptidos de
+            bajo peso molecular, favoreciendo el desarrollo de micro y macroorganismos benéficos</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
    </div>
-   <p>Aceite natural, obtenido del salmón, con propiedades únicas que promueven el desarrollo de defensa en las plantas.</p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
+
+
+   <!--segunda categoria-->>
+
+   <div class="container_2">
+
+      <h3 class="title">Acidificantes con Indicador de ph</h3>
+
+      <div class="products-container">
+         <div class="product" data-name="p-7">
+            <img src="./imagenes/pro5.jpg" alt="">
+            <h3>TRIADA FOLIAR 18-28-8 KG </h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-8">
+            <img src="./imagenes/pro6.jpg" alt="">
+            <h3>TRIADA FOLIAR 18-28-8 X 10 KG </h3>
+            <div class="price">$60.00</div>
+         </div>
+
+         <div class="product" data-name="p-9">
+            <img src="./imagenes/pro66.png" alt="">
+            <h3>TRIADA FOLIAR 18-45-0 KG</h3>
+            <div class="price">$20.00</div>
+         </div>
+      </div>
    </div>
-</div>
 
-<div class="preview" data-target="p-6">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/n2.png"alt="">
-   <h3>BIOAMINO-L X 20 LTS</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Es una enmienda orgánica líquida que activa la biología del suelo, gracias sus péptidos y polipéptidos de bajo peso molecular, favoreciendo el desarrollo de micro y macroorganismos benéficos</p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-</div>
-
-
-<!--segunda categoria-->>
-
-<div class="container_2">
-  
-   <h3 class="title">Acidificantes con Indicador de ph</h3>
-   
-   <div class="products-container">
-      <div class="product" data-name="p-7">
+   <div class="products-preview_2">
+      <div class="preview" data-target="p-7">
+         <i class="fas fa-times"></i>
          <img src="./imagenes/pro5.jpg" alt="">
-         <h3>TRIADA FOLIAR 18-28-8 KG </h3>
-         <div class="price">$25.00</div> 
+         <h3>TRIADA FOLIAR 18-28-8 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
       </div>
 
-      <div class="product" data-name="p-8">
+      <div class="preview" data-target="p-8">
+         <i class="fas fa-times"></i>
          <img src="./imagenes/pro6.jpg" alt="">
-         <h3>TRIADA FOLIAR 18-28-8 X 10 KG </h3>
-         <div class="price">$60.00</div> 
+         <h3>TRIADA FOLIAR 18-28-8 X 10 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+         <div class="price">$60.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
       </div>
 
-      <div class="product" data-name="p-9">
+      <div class="preview" data-target="p-9">
+         <i class="fas fa-times"></i>
          <img src="./imagenes/pro66.png" alt="">
          <h3>TRIADA FOLIAR 18-45-0 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
          <div class="price">$20.00</div>
-      </div>
-   </div> 
-</div>
-
-<div class="products-preview_2">
-   <div class="preview" data-target="p-7">
-      <i class="fas fa-times"></i>
-      <img src="./imagenes/pro5.jpg" alt="">
-      <h3>TRIADA FOLIAR 18-28-8 KG</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
-      <div class="price">$25.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
       </div>
    </div>
 
-   <div class="preview" data-target="p-8">
-      <i class="fas fa-times"></i>
-      <img src="./imagenes/pro6.jpg" alt="">
-      <h3>TRIADA FOLIAR 18-28-8 X 10 KG</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
-      <div class="price">$60.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
+   <!--tercera categoria-->>
 
-   <div class="preview" data-target="p-9">
-      <i class="fas fa-times"></i>
-      <img src="./imagenes/pro66.png" alt="">
-      <h3>TRIADA FOLIAR 18-45-0 KG</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
-      <div class="price">$20.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+
+   <div class="container_3">
+      <h3 class="title">Ácido Húmico</h3>
+      <div class="products-container">
+         <div class="product" data-name="p-10">
+            <img src="./imagenes/pro7.jpg" alt="">
+            <h3>KELP WAY FULVICO X 200 LT</h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-11">
+            <img src="./imagenes/pro8.jpg" alt="">
+            <h3>KELP WAY HUMICO TECH X 1 LT</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-12">
+            <img src="./imagenes/pro9.jpg" alt="">
+            <h3>KELP WAY HUMIKELP X 1LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
       </div>
    </div>
-</div>
-
-<!--tercera categoria-->>
-
- 
-<div class="container_3"> 
-   <h3 class="title">Ácido Húmico</h3>
-   <div class="products-container">
-    <div class="product" data-name="p-10">
-      <img src="./imagenes/pro7.jpg" alt="">
-      <h3>KELP WAY FULVICO X 200 LT</h3>
-      <div class="price">$25.00</div> 
-   </div>
-
-   <div class="product" data-name="p-11">
-      <img src="./imagenes/pro8.jpg"alt="">
-      <h3>KELP WAY HUMICO TECH X 1 LT</h3>
-      <div class="price">$20.00</div>
-   </div>
-
-   <div class="product" data-name="p-12">
-      <img src="./imagenes/pro9.jpg"alt="">
-      <h3>KELP WAY HUMIKELP X 1LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-</div>
-</div>
-
-<div class="products-preview_3">
-
-<div class="preview" data-target="p-10">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/pro7.jpg"alt="">
-   <h3>KELP WAY FULVICO X 200 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Ha sido formulado para su aplicación durante el crecimiento de la planta, prefloración y formación de fruto.</p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-11">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/pro8.jpg" alt="">
-   <h3>KELP WAY HUMICO TECH X 1 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Ha sido formulada para su aplicación durante momentos claves del cultivo.</p>
-   <div class="price">$20.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-12">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/pro9.jpg" alt="">
-   <h3>KELP WAY HUMIKELP X 1LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Estimula el desarrollo foliar y promueve el crecimiento del sistema radicular.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-</div>
-
-<!--cuarta categoria-->>
-
- 
-<div class="container_4"> 
-   <h3 class="title">Adherentes Surfactantes Humectantes</h3>
-   <div class="products-container">
-    <div class="product" data-name="p-13">
-      <img src="./imagenes/p1.png" alt="">
-      <h3>KELP WAY STICK X 20 LT</h3>
-      <div class="price">$25.00</div> 
-   </div>
-
-   <div class="product" data-name="p-38">
-      <img src="./imagenes/p26.png"alt="">
-      <h3>TRIADA CITOPLEX X 4 LT</h3>
-      <div class="price">$30.00</div>
-   </div>
-
-   <div class="product" data-name="p-14">
-      <img src="./imagenes/p2.png"alt="">
-      <h3>TRIADA CITOPLEX X 20 LT</h3>
-      <div class="price">$20.00</div>
-   </div>
-
-   <div class="product" data-name="p-15">
-      <img src="./imagenes/p3.png"alt="">
-      <h3>TRIADA FOLIAR 0-32-43 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-16">
-      <img src="./imagenes/p4.png"alt="">
-      <h3>TRIADA QUEL BORO X 0.5 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-17">
-      <img src="./imagenes/p5.png"alt="">
-      <h3>TRIADA QUEL MN X 10 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-</div>
-</div>
-
-<div class="products-preview_4">
-
-<div class="preview" data-target="p-13">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p1.png"alt="">
-   <h3>KELP WAY FULVICO X 200 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Permite fijar las moléculas de los agroquímicos o fertilizantes sobre la superficie de la hoja o fruto, reduciendo de esta manera la pérdida del producto por lavado o escurrimiento. </p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-38">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p26.png"alt="">
-   <h3>TRIADA CITOPLEX X 4 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante líquido para aplicación foliar o por sistemas de fertirriego.</p>
-   <div class="price">$30.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-14">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p2.png" alt="">
-   <h3>TRIADA CITOPLEX X 20 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante líquido para aplicación foliar o por sistemas de fertirriego. Formulación con nitrógeno, fósforo, potasio, calcio, magnesio y micronutrientes.</p>
-   <div class="price">$20.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-15">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p3.png" alt="">
-   <h3>TRIADA FOLIAR 0-32-43 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-16">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p3.png" alt="">
-   <h3>TRIADA QUEL BORO X 0.5 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-17">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p5.png" alt="">
-   <h3>TRIADA QUEL MN X 10 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-</div>
-
-
-<!--quinta categoria-->>
-
-<div class="container_5"> 
-   <h3 class="title">Bioestimulantes </h3>
-   <div class="products-container">
-    <div class="product" data-name="p-18">
-      <img src="./imagenes/p6.png" alt="">
-      <h3>KELP WAY CITOKIN X LT</h3>
-      <div class="price">$25.00</div> 
-   </div>
-
-   <div class="product" data-name="p-19">
-      <img src="./imagenes/p7.png"alt="">
-      <h3>KELP WAY DEFENSE K84 X 20LT</h3>
-      <div class="price">$20.00</div>
-   </div>
-
-   <div class="product" data-name="p-20">
-      <img src="./imagenes/p8.png"alt="">
-      <h3>TRIADA QUEL CU X 10 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-21">
-      <img src="./imagenes/p9.png"alt="">
-      <h3>TRIADA QUEL MG X 1 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-22">
-      <img src="./imagenes/p10.png"alt="">
-      <h3>TRIADA QUEL ZN X 1 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-23">
-      <img src="./imagenes/p11.png"alt="">
-      <h3>TRIADA R 14-8-19 X 1 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-39">
-      <img src="./imagenes/p11.png"alt="">
-      <h3>TRIADA R 14-8-19 X 12 KG</h3>
-      <div class="price">$68.00</div>
-   </div>
-
-   <div class="product" data-name="p-24">
-      <img src="./imagenes/p12.png"alt="">
-      <h3>TRIADA-FLUX 411F X 20 LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-25">
-      <img src="./imagenes/p13.png"alt="">
-      <h3>TRIADAMIN X 1 LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-</div>
-</div>
-
-<div class="products-preview_5">
-
-<div class="preview" data-target="p-18">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p6.png"alt="">
-   <h3>KELP WAY CITOKIN X LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante formulado con diversos extractos vegetales, logrando una actividad promotora de Citoquininas equivalentes a 750 ppm.</p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-19">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p7.png" alt="">
-   <h3>KELP WAY DEFENSE K84 X 20LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante foliar formulado con un alto porcentaje de ion fosfito y potasio.</p>
-   <div class="price">$20.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-20">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p8.png" alt="">
-   <h3>TRIADA QUEL CU X 10 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-21">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p9.png" alt="">
-   <h3>TRIADA QUEL MG X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente de Uso Agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-22">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p10.png" alt="">
-   <h3>TRIADA QUEL ZN X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-39">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p11.png" alt="">
-   <h3>TRIADA R 14-8-19 X 12 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Mezcla de fertilizantes mayores secundarios y menores.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-
-<div class="preview" data-target="p-23">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p11.png" alt="">
-   <h3>TRIADA R 14-8-19 X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Mezcla de fertilizantes mayores secundarios y menores.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-24">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p12.png" alt="">
-   <h3>TRIADA-FLUX 411F X 20 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante de la aplicación de Agroquímicos.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-25">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p13.png" alt="">
-   <h3>TRIADAMIN X 1 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante líquido orgánico-mineral con acción bioestimulante debido a su alto nivel de aminoácidos.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-</div>
-
-<!--sexta categoria-->
-
-
-<div class="container_6"> 
-   <h3 class="title">Fertilizantes Foliares </h3>
-   <div class="products-container">
-    <div class="product" data-name="p-26">
-      <img src="./imagenes/p14.png" alt="">
-      <h3>OPTIMUS FE X 1 KG</h3>
-      <div class="price">$25.00</div> 
-   </div>
-
-   <div class="product" data-name="p-27">
-      <img src="./imagenes/p15.png"alt="">
-      <h3>RADIFLEX X 1 LT</h3>
-      <div class="price">$20.00</div>
-   </div>
-
-   <div class="product" data-name="p-28">
-      <img src="./imagenes/p16.png"alt="">
-      <h3>TRIADA AGUAS X 1 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-29">
-      <img src="./imagenes/p17.png"alt="">
-      <h3>TRIADA IN X 4 LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-30">
-      <img src="./imagenes/p18.png"alt="">
-      <h3>TRIADA MADURADOR X 10 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-31">
-      <img src="./imagenes/p19.png"alt="">
-      <h3>TRIADA QUEL BALANCE X 1 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-32">
-      <img src="./imagenes/p20.png"alt="">
-      <h3>TRIADA QUEL CA X 10 KG</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-33">
-      <img src="./imagenes/p21.png"alt="">
-      <h3>TRIADA-FLUX 411F X 4 LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-34">
-      <img src="./imagenes/p22.png"alt="">
-      <h3>TRIADA-OIL EMULSION X 1 LT</h3>
-      <div class="price">$20.00</div>
-   </div>
-
-   <div class="product" data-name="p-35">
-      <img src="./imagenes/p23.png"alt="">
-      <h3>TRIADA-OIL EMULSION X 20 LT</h3>
-      <div class="price">$18.00</div>
-   </div>
-
-   <div class="product" data-name="p-36">
-      <img src="./imagenes/p24.png"alt="">
-      <h3>TRIADA-OIL EMULSION X 200 LT</h3>
-      <div class="price">$58.00</div>
-   </div>
 
-   <div class="product" data-name="p-37">
-      <img src="./imagenes/p25.png"alt="">
-      <h3>TRIADAMIN X 20 LT</h3>
-      <div class="price">$58.00</div>
-   </div>
-
-
-</div>
-</div>
-
-<div class="products-preview_6">
-
-<div class="preview" data-target="p-26">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p14.png"alt="">
-   <h3>OPTIMUS FE X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante que contiene hierro (Fe) quelatado con EDDHA, en la que predomina la isomería orto-orto, formulado para ser aplicado en suelos de pH alto.</p>
-   <div class="price">$25.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-27">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p15.png" alt="">
-   <h3>RADIFLEX X 1 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>FERTILIZANTE A BASE DE EXTRACTO DE ALGAS MARINAS (Ecklonia maxima).</p>
-   <div class="price">$20.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-28">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p16.png" alt="">
-   <h3>TRIADA AGUAS X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Regulador de pH y Suavizador de Aguas Duras de uso Agrícola</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-29">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p17.png" alt="">
-   <h3>TRIADA IN X 4 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante, No-Iónico, Surfactante, Humectante Dispersante, Acelerador de Penetración, Emulsificante, Controlador de Espuma e Indicador para pH Alcalinos.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-30">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p18.png" alt="">
-   <h3>TRIADA MADURADOR X 10 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Polvo soluble para aplicación foliar, o sistemas de irrigación. Fertilizante foliar de alta concentración en fósforo y potasio.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-31">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p19.png" alt="">
-   <h3>TRIADA QUEL BALANCE X 1 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante a base de micronutrientes y elementos secundarios quelatados de alta eficiencia.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-<div class="preview" data-target="p-32">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p20.png" alt="">
-   <h3>TRIADA QUEL CA X 10 KG</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante Quelatado para aplicación Foliar o mediante sistemas de Fertirriego, de Uso Agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-33">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p21.png" alt="">
-   <h3>TRIADA-FLUX 411F X 4 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante de la aplicación de Agroquímicos.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-34">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p22.png" alt="">
-   <h3>TRIADA-OIL EMULSION X 1 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante de uso agrícola.</p>
-   <div class="price">$20.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-35">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p23.png" alt="">
-   <h3>TRIADA-OIL EMULSION X 20 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante de uso agrícola.</p>
-   <div class="price">$18.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-36">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p24.png" alt="">
-   <h3>TRIADA-OIL EMULSION X 200 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Coadyuvante de uso agrícola.</p>
-   <div class="price">$58.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-<div class="preview" data-target="p-37">
-   <i class="fas fa-times"></i>
-   <img src="./imagenes/p25.png" alt="">
-   <h3>TRIADAMIN X 20 LT</h3>
-   <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-   </div>
-   <p>Fertilizante líquido orgánico-mineral con acción bioestimulante debido a su alto nivel de aminoácidos.</p>
-   <div class="price">$58.00</div>
-   <div class="buttons">
-      <a href="#" class="buy">buy now</a>
-      <a href="#" class="cart">add to cart</a>
-   </div>
-</div>
-
-</div>
-<br> 
-<br>
-<br>
-<br>
-<br>
-
-<!-- contactos -->
-  
-<footer class="footer">
-   <div class="container">
-       <h1>PROCAMPO</h1>
-       <div class="footer__button--market">
-         <a class="cmp-button" href="https://maps.app.goo.gl/FJ15zhTXwpipxdT29" target="_blank">
-             <i class="bx bxs-map"></i>
-             <span class="cmp-button__text">Perú</span>
-         </a> 
-     </div>
-     
-       <hr>
-       <div class="footer-row">
-           <div class="footer__navigation">
+   <div class="products-preview_3">
+
+      <div class="preview" data-target="p-10">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro7.jpg" alt="">
+         <h3>KELP WAY FULVICO X 200 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Ha sido formulado para su aplicación durante el crecimiento de la planta, prefloración y formación de fruto.
+         </p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-11">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro8.jpg" alt="">
+         <h3>KELP WAY HUMICO TECH X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Ha sido formulada para su aplicación durante momentos claves del cultivo.</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-12">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/pro9.jpg" alt="">
+         <h3>KELP WAY HUMIKELP X 1LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Estimula el desarrollo foliar y promueve el crecimiento del sistema radicular.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   </div>
+
+   <!--cuarta categoria-->>
+
+
+   <div class="container_4">
+      <h3 class="title">Adherentes Surfactantes Humectantes</h3>
+      <div class="products-container">
+         <div class="product" data-name="p-13">
+            <img src="./imagenes/p1.png" alt="">
+            <h3>KELP WAY STICK X 20 LT</h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-38">
+            <img src="./imagenes/p26.png" alt="">
+            <h3>TRIADA CITOPLEX X 4 LT</h3>
+            <div class="price">$30.00</div>
+         </div>
+
+         <div class="product" data-name="p-14">
+            <img src="./imagenes/p2.png" alt="">
+            <h3>TRIADA CITOPLEX X 20 LT</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-15">
+            <img src="./imagenes/p3.png" alt="">
+            <h3>TRIADA FOLIAR 0-32-43 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-16">
+            <img src="./imagenes/p4.png" alt="">
+            <h3>TRIADA QUEL BORO X 0.5 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-17">
+            <img src="./imagenes/p5.png" alt="">
+            <h3>TRIADA QUEL MN X 10 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="products-preview_4">
+
+      <div class="preview" data-target="p-13">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p1.png" alt="">
+         <h3>KELP WAY FULVICO X 200 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Permite fijar las moléculas de los agroquímicos o fertilizantes sobre la superficie de la hoja o fruto,
+            reduciendo de esta manera la pérdida del producto por lavado o escurrimiento. </p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-38">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p26.png" alt="">
+         <h3>TRIADA CITOPLEX X 4 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante líquido para aplicación foliar o por sistemas de fertirriego.</p>
+         <div class="price">$30.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-14">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p2.png" alt="">
+         <h3>TRIADA CITOPLEX X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante líquido para aplicación foliar o por sistemas de fertirriego. Formulación con nitrógeno,
+            fósforo, potasio, calcio, magnesio y micronutrientes.</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-15">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p3.png" alt="">
+         <h3>TRIADA FOLIAR 0-32-43 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-16">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p3.png" alt="">
+         <h3>TRIADA QUEL BORO X 0.5 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-17">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p5.png" alt="">
+         <h3>TRIADA QUEL MN X 10 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   </div>
+
+
+   <!--quinta categoria-->>
+
+   <div class="container_5">
+      <h3 class="title">Bioestimulantes </h3>
+      <div class="products-container">
+         <div class="product" data-name="p-18">
+            <img src="./imagenes/p6.png" alt="">
+            <h3>KELP WAY CITOKIN X LT</h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-19">
+            <img src="./imagenes/p7.png" alt="">
+            <h3>KELP WAY DEFENSE K84 X 20LT</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-20">
+            <img src="./imagenes/p8.png" alt="">
+            <h3>TRIADA QUEL CU X 10 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-21">
+            <img src="./imagenes/p9.png" alt="">
+            <h3>TRIADA QUEL MG X 1 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-22">
+            <img src="./imagenes/p10.png" alt="">
+            <h3>TRIADA QUEL ZN X 1 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-23">
+            <img src="./imagenes/p11.png" alt="">
+            <h3>TRIADA R 14-8-19 X 1 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-39">
+            <img src="./imagenes/p11.png" alt="">
+            <h3>TRIADA R 14-8-19 X 12 KG</h3>
+            <div class="price">$68.00</div>
+         </div>
+
+         <div class="product" data-name="p-24">
+            <img src="./imagenes/p12.png" alt="">
+            <h3>TRIADA-FLUX 411F X 20 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-25">
+            <img src="./imagenes/p13.png" alt="">
+            <h3>TRIADAMIN X 1 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="products-preview_5">
+
+      <div class="preview" data-target="p-18">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p6.png" alt="">
+         <h3>KELP WAY CITOKIN X LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante formulado con diversos extractos vegetales, logrando una actividad promotora de Citoquininas
+            equivalentes a 750 ppm.</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-19">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p7.png" alt="">
+         <h3>KELP WAY DEFENSE K84 X 20LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante foliar formulado con un alto porcentaje de ion fosfito y potasio.</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-20">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p8.png" alt="">
+         <h3>TRIADA QUEL CU X 10 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-21">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p9.png" alt="">
+         <h3>TRIADA QUEL MG X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente de Uso Agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-22">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p10.png" alt="">
+         <h3>TRIADA QUEL ZN X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Micronutriente para aplicación Foliar o por Sistemas de Fertirriego, de Uso Agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-39">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p11.png" alt="">
+         <h3>TRIADA R 14-8-19 X 12 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Mezcla de fertilizantes mayores secundarios y menores.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+
+      <div class="preview" data-target="p-23">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p11.png" alt="">
+         <h3>TRIADA R 14-8-19 X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Mezcla de fertilizantes mayores secundarios y menores.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-24">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p12.png" alt="">
+         <h3>TRIADA-FLUX 411F X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante de la aplicación de Agroquímicos.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-25">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p13.png" alt="">
+         <h3>TRIADAMIN X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante líquido orgánico-mineral con acción bioestimulante debido a su alto nivel de aminoácidos.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   </div>
+
+   <!--sexta categoria-->
+
+
+   <div class="container_6">
+      <h3 class="title">Fertilizantes Foliares </h3>
+      <div class="products-container">
+         <div class="product" data-name="p-26">
+            <img src="./imagenes/p14.png" alt="">
+            <h3>OPTIMUS FE X 1 KG</h3>
+            <div class="price">$25.00</div>
+         </div>
+
+         <div class="product" data-name="p-27">
+            <img src="./imagenes/p15.png" alt="">
+            <h3>RADIFLEX X 1 LT</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-28">
+            <img src="./imagenes/p16.png" alt="">
+            <h3>TRIADA AGUAS X 1 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-29">
+            <img src="./imagenes/p17.png" alt="">
+            <h3>TRIADA IN X 4 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-30">
+            <img src="./imagenes/p18.png" alt="">
+            <h3>TRIADA MADURADOR X 10 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-31">
+            <img src="./imagenes/p19.png" alt="">
+            <h3>TRIADA QUEL BALANCE X 1 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-32">
+            <img src="./imagenes/p20.png" alt="">
+            <h3>TRIADA QUEL CA X 10 KG</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-33">
+            <img src="./imagenes/p21.png" alt="">
+            <h3>TRIADA-FLUX 411F X 4 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-34">
+            <img src="./imagenes/p22.png" alt="">
+            <h3>TRIADA-OIL EMULSION X 1 LT</h3>
+            <div class="price">$20.00</div>
+         </div>
+
+         <div class="product" data-name="p-35">
+            <img src="./imagenes/p23.png" alt="">
+            <h3>TRIADA-OIL EMULSION X 20 LT</h3>
+            <div class="price">$18.00</div>
+         </div>
+
+         <div class="product" data-name="p-36">
+            <img src="./imagenes/p24.png" alt="">
+            <h3>TRIADA-OIL EMULSION X 200 LT</h3>
+            <div class="price">$58.00</div>
+         </div>
+
+         <div class="product" data-name="p-37">
+            <img src="./imagenes/p25.png" alt="">
+            <h3>TRIADAMIN X 20 LT</h3>
+            <div class="price">$58.00</div>
+         </div>
+
+
+      </div>
+   </div>
+
+   <div class="products-preview_6">
+
+      <div class="preview" data-target="p-26">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p14.png" alt="">
+         <h3>OPTIMUS FE X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante que contiene hierro (Fe) quelatado con EDDHA, en la que predomina la isomería orto-orto,
+            formulado para ser aplicado en suelos de pH alto.</p>
+         <div class="price">$25.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-27">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p15.png" alt="">
+         <h3>RADIFLEX X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>FERTILIZANTE A BASE DE EXTRACTO DE ALGAS MARINAS (Ecklonia maxima).</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-28">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p16.png" alt="">
+         <h3>TRIADA AGUAS X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Regulador de pH y Suavizador de Aguas Duras de uso Agrícola</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-29">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p17.png" alt="">
+         <h3>TRIADA IN X 4 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante, No-Iónico, Surfactante, Humectante Dispersante, Acelerador de Penetración, Emulsificante,
+            Controlador de Espuma e Indicador para pH Alcalinos.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-30">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p18.png" alt="">
+         <h3>TRIADA MADURADOR X 10 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Polvo soluble para aplicación foliar, o sistemas de irrigación. Fertilizante foliar de alta concentración en
+            fósforo y potasio.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-31">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p19.png" alt="">
+         <h3>TRIADA QUEL BALANCE X 1 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante a base de micronutrientes y elementos secundarios quelatados de alta eficiencia.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-32">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p20.png" alt="">
+         <h3>TRIADA QUEL CA X 10 KG</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante Quelatado para aplicación Foliar o mediante sistemas de Fertirriego, de Uso Agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-33">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p21.png" alt="">
+         <h3>TRIADA-FLUX 411F X 4 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante de la aplicación de Agroquímicos.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-34">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p22.png" alt="">
+         <h3>TRIADA-OIL EMULSION X 1 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante de uso agrícola.</p>
+         <div class="price">$20.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-35">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p23.png" alt="">
+         <h3>TRIADA-OIL EMULSION X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante de uso agrícola.</p>
+         <div class="price">$18.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-36">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p24.png" alt="">
+         <h3>TRIADA-OIL EMULSION X 200 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Coadyuvante de uso agrícola.</p>
+         <div class="price">$58.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-37">
+         <i class="fas fa-times"></i>
+         <img src="./imagenes/p25.png" alt="">
+         <h3>TRIADAMIN X 20 LT</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Fertilizante líquido orgánico-mineral con acción bioestimulante debido a su alto nivel de aminoácidos.</p>
+         <div class="price">$58.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <!-- contactos -->
+
+   <footer class="footer">
+      <div class="container">
+         <h1>PROCAMPO</h1>
+         <div class="footer__button--market">
+            <a class="cmp-button" href="https://maps.app.goo.gl/FJ15zhTXwpipxdT29" target="_blank">
+               <i class="bx bxs-map"></i>
+               <span class="cmp-button__text">Perú</span>
+            </a>
+         </div>
+
+         <hr>
+         <div class="footer-row">
+            <div class="footer__navigation">
                <div class="cmp-text">
-                   <h1>NOSOTROS</h1>
-                   <p>Empresa peruana dedicada a la comercialización de insumos agrícolas.</p>
-                   <br>
-                   <br>
-                   <img src="imagenes/logo1.png" alt="Logo PROCAMPO">
+                  <h1>NOSOTROS</h1>
+                  <p>Empresa peruana dedicada a la comercialización de insumos agrícolas.</p>
+                  <br>
+                  <br>
+                  <img src="imagenes/logo1.png" alt="Logo PROCAMPO">
                </div>
-           </div>
-           <div class="footer__mobile-accordion">
+            </div>
+            <div class="footer__mobile-accordion">
                <div class="cmp-text">
-                   <h1> UBICANOS</h1>
-                   <ul>
-                     <li><a href="https://maps.app.goo.gl/5ex8xv6eRP5W7sfR9" target="_blank" style="color: white;">Mapa del sitio</a></li>
+                  <h1> UBICANOS</h1>
+                  <ul>
+                     <li><a href="https://maps.app.goo.gl/5ex8xv6eRP5W7sfR9" target="_blank" style="color: white;">Mapa
+                           del sitio</a></li>
                      <br>
                      <br>
-                     <a href="https://maps.app.goo.gl/5ex8xv6eRP5W7sfR9" target="_blank"><img src="imagenes/peru (1).png" alt="mapa"></a>
-                     </ul>
+                     <a href="https://maps.app.goo.gl/5ex8xv6eRP5W7sfR9" target="_blank"><img
+                           src="imagenes/peru (1).png" alt="mapa"></a>
                   </ul>
-                   <h1>CONTACTOS</h1>
-                   <ul>
-                     
-                       <li><i class="fas fa-map-marker-alt"></i> Calle Capitán Salvador Carmona N°216 - Ate – Lima</li>
-                       <li><i class="fas fa-envelope"></i> servicio.cliente@procampo.com.pe</li>
-                       <li><i class="fas fa-phone"></i> (511) 364 7338 - (511) 364 7335 - (511) 364 7333</li>
-                   </ul>
+                  </ul>
+                  <h1>CONTACTOS</h1>
+                  <ul>
+
+                     <li><i class="fas fa-map-marker-alt"></i> Calle Capitán Salvador Carmona N°216 - Ate – Lima</li>
+                     <li><i class="fas fa-envelope"></i> servicio.cliente@procampo.com.pe</li>
+                     <li><i class="fas fa-phone"></i> (511) 364 7338 - (511) 364 7335 - (511) 364 7333</li>
+                  </ul>
                </div>
-           </div>
-           <div class="footer__link-list">
+            </div>
+            <div class="footer__link-list">
                <div class="cmp-text">
-                   <h1>TÉRMINOS Y CONDICIONES</h1>
-                   <ul>
-                       <li>Términos de uso</li>
-                       <li>Política de Privacidad</li>
-                       <li>Configuración de cookies</li>
-                   </ul>
+                  <h1>TÉRMINOS Y CONDICIONES</h1>
+                  <ul>
+                     <li>Términos de uso</li>
+                     <li>Política de Privacidad</li>
+                     <li>Configuración de cookies</li>
+                  </ul>
                </div>
-           </div>
-           <div class="social-icons">
+            </div>
+            <div class="social-icons">
                <h1>BUSCAMOS</h1>
                <br>
                <ul>
-                  <li><a href="https://web.facebook.com/Procampo.s.a/?_rdc=1&_rdr" target="_blank"><span class="facebook"><i class="fab fa-facebook-f"></i></span></a></li>
-                  <li><a href="https://www.linkedin.com/in/procampo-s-a-grupo-chiaway/" target="_blank"><span class="linkedin"><i class="fab fa-linkedin-in"></i></span></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC6Jng8EgHYbxj5CV7JvuW6Q?view_as=subscriber" target="_blank"><span class="youtube"><i class="fab fa-youtube"></i></span></a></li>
-                  <li><a href="https://www.instagram.com/procampo.peru/" target="_blank"><span class="instagram"><i class="fab fa-instagram"></i></span></a></li>
-              </ul>
-              
-           </div>
-       </div>
-       <hr>
-       <div class="text footer__bottom--privacy">
-           <div class="cmp-text">
-               <p><h3>© 2024 Creado por Liliana Martínez Lalangui.</h3></p>
-           </div>
-       </div>
-   </div>
-</footer>
- 
-</section>
-<script src="scriptProductos.js"></script>
+                  <li><a href="https://web.facebook.com/Procampo.s.a/?_rdc=1&_rdr" target="_blank"><span
+                           class="facebook"><i class="fab fa-facebook-f"></i></span></a></li>
+                  <li><a href="https://www.linkedin.com/in/procampo-s-a-grupo-chiaway/" target="_blank"><span
+                           class="linkedin"><i class="fab fa-linkedin-in"></i></span></a></li>
+                  <li><a href="https://www.youtube.com/channel/UC6Jng8EgHYbxj5CV7JvuW6Q?view_as=subscriber"
+                        target="_blank"><span class="youtube"><i class="fab fa-youtube"></i></span></a></li>
+                  <li><a href="https://www.instagram.com/procampo.peru/" target="_blank"><span class="instagram"><i
+                              class="fab fa-instagram"></i></span></a></li>
+               </ul>
+
+            </div>
+         </div>
+         <hr>
+         <div class="text footer__bottom--privacy">
+            <div class="cmp-text">
+               <p>
+               <h3>© 2024 Creado por Liliana Martínez Lalangui.</h3>
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   </section>
+   <script src="scriptProductos.js"></script>
 
 </body>
+
 </html>
