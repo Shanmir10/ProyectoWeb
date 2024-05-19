@@ -135,7 +135,7 @@ body {
 .container_4 .products-container .product:hover h3,
 .container_5 .products-container .product:hover h3,
 .container_6 .products-container .product:hover h3 {
-   color: #27ae60;
+   color: rgb(58, 196, 8);
 }
 
 .container .products-container .product .price,
@@ -249,7 +249,7 @@ body {
 .products-preview_4 .preview .stars i,
 .products-preview_5 .preview .stars i,
 .products-preview_6 .preview .stars i {
-   color: #27ae60;
+   color:rgb(58, 196, 8); 
 }
 
 .products-preview .preview .stars span,
@@ -281,7 +281,7 @@ body {
 .products-preview_6 .preview .price {
    padding: 1rem 0;
    font-size: 2.5rem;
-   color: #27ae60;
+   color: rgb(58, 196, 8);
 }
 
 .products-preview .preview .buttons,
@@ -454,7 +454,7 @@ section {
 }
 
 .main-text h5 {
-   color: #efa40d;
+   color:  rgb(236, 171, 8);
    font-size: 35px;
    text-transform: capitalize;
    font-weight: 500;
@@ -517,7 +517,7 @@ section {
 }
 
 header.sticky {
-   background: orange;
+   background: rgb(58, 196, 8);
    padding: 5px 5%;
    box-shadow: 0px 0px 10px rgba(0 0 0 /10%);
 }
@@ -553,7 +553,7 @@ header.sticky {
 
 .cmp-text h1 {
    font-size: 18px;
-   color: #f57c03e0;
+   color: #5dd71fe0;
    margin-bottom: 18px;
 }
 
@@ -634,7 +634,7 @@ header.sticky {
    margin: 70px 10px 20px 0; 
    display: inline-block;
    font-weight: bold; 
-   color: #db8309; 
+   color: rgb(48, 200, 48); 
 }
 
 .footer__button--market {
@@ -737,7 +737,7 @@ body {
 button {
    padding: 10px 20px;
    font-size: 18px;
-   background: #ffa500;
+   background: rgb(66, 209, 66);
    border: none;
    border-radius: 6px;
    cursor:pointer;
@@ -745,7 +745,7 @@ button {
 }
 
 button.active {
-   background: #23a660;
+   background: #97eda1;
    color: #fff;
 }
 

@@ -1,188 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procampo_Novedades</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-     
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: poppins;
-        }
-        .header-image {
-            width: 100%;
-            height: 30%;
-            position: relative ;
-            
-        }
-
-        .content {
-            padding-top: 100px; 
-
-            text-align: center;
-        }
-        h1 {
-            margin-top: 0; 
-        }
-
-        *{
-            margin: 0px;
-            padding:0px;
-            font-family:poppins;
-            box-sizing: border-box;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul{
-            list-style: none;
-        }
-        body{
-            margin: 0px;
-            padding:0px;
-            font-family: poppins;
-        }
-        #novedades{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; 
-            padding: 50px;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-    
-        .novedades-heading{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-        }
-        .novedades-heading span{
-            color: black;
-        }
-        .novedades-heading h1{
-            font-size: 2.4rem ;
-            color: #2b2b2b;
-            font-weight: 600;
-        }
-        .novedades-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0px;
-            flex-wrap: wrap;
-        }
-        .novedades-box{
-            width: calc(50% - 40px); 
-            max-width: 400px;
-            background-color: #ffffff;
-            border: 1px solid #ececec;
-            margin: 50px;
-        }
-        .novedades-img{
-            width: 100%;
-            text-align: center;
-            
-        }
-        .novedades-img img{
-            max-width: 70%;
-            height: 50%; 
-           text-align: center;
-            
-        }
-        .novedades-text{
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-        }
-        .novedades-text span{
-            color: #f33c3c;
-            font-size: 0.9rem;
-        }
-        .novedades-text .novedades-title{
-            font-size: 1.3rem;
-            font-family: 500;
-            color: #272727;
-
-        }
-        .novedades-text .novedades-title:hover{
-            color: #f33c3c;
-            transform: all ease 0.3s;
-        }
-        .novedades-text p{
-            color: #9b9b9b;
-            font-size: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin: 20px 0px;
-        }
-        .novedades-text a{
-         color: #0f0f0f; 
-        }
-        .novedades-text a:hover{
-            color:#f33c3c;
-            transition: all ease 0.3s;
-
-        }
-        .novedades-text .novedades-link {
-            display: inline-block;
-            background-color:rgb(161, 188, 189);
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            width: 300px;
-            height: 50px;
-            line-height: 30px;
-            text-align: center;
-            
-        }
-
-        .novedades-text .novedades-link:hover {
-            background-color: #56c92c;
-        }
-        .carousel {
-            max-width: 6000px; 
-            margin: 0 auto; 
-        }
-
-        .carousel img {
-            width: 800%;
-            max-width: 100%; 
-            height: 400px;
-            object-fit: cover;
-        }
-        .menu{
-            display: flex;
-        }
-        .menu a {
-            margin-right: 20px; /* Espacio entre cada elemento del menú */
-            text-decoration: none; /* Quitar subrayado de los enlaces */
-            color: #150c0c; /* Color del texto del menú */
-        }
-
-        .menu a:hover {
-            text-decoration: underline; /* Subrayar enlaces al pasar el mouse por encima */
-        }
-        .header {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 10px;
-            background-color: rgb(136, 172, 168); /* Color de fondo del encabezado */
-            color: #1c1818; /* Color del texto */
-        }
- 
-    </style>
+    <title>Novedades</title>
+    <link rel="stylesheet" href="styleNovedades.css">
 </head>
 <body>
-    <div class="header">
+    <header>
+        <div class="header">
         <div class="menu">
           <a href="Index_Inicio.html" title="Inicio"><b>INICIO</b></a>
           <a href="Index_Nosotros.html" title="¿Quiénes somos?"><b>NOSOTROS</b></a>
@@ -191,144 +16,94 @@
           <a href="Index_Accesos.html" title="Accesos"><b>ACCESOS</b></a>
         </div>
       </div>
-      
-</body>
-    <body>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imagenes/agri3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/agri6.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/agri1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/agri2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/agri9.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/agri5.jpg" class="d-block w-100" alt="...">
-              </div>
-          
+    </header>
+    <div class="slider">
+
+
+        <div class="list">
+
+            <div class="item">
+                <img src="imagenes/anoche.jpg">
+
+                <div class="content">
+                    <div class="title"> FACILITAN CREDITOS A </div>
+                    <div class="type">PRODUCTORES </div>
+                    <div class="description">
+                        Medida permitirá otorgar un incentivo al pequeño productor agrario para acceder a créditos del Banco Agropecuario (Agrobanco). El Ministerio de Desarrollo Agrario y Riego (Midagri) informó que el Ejecutivo aprobó transferir S/ 100 millones al Fondo para la Inclusión Financiera del Pequeño Productor Agropecuario (FIFPPA) con...
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-      
-            <section id="novedades">
-                <div class="novedades-heading">
-                    <h1>NOVEDADES</h1>
-                    <h3><span>Noticias recientes del Mundo Agricultura</span></h3>
+
+            <div class="item">
+                <img src="imagenes/cafe.jpg" alt="">
+
+                <div class="content">
+                    <div class="title">AGROEXPORTACIONES</div>
+                    <div class="type">CAEN A 2.6%</div>
+                    <div class="description">
+                        Los factores que impactaron en el comportamiento negativo fueron el fenómeno de El Niño, la crisis política y no tener un marco jurídico que promueva esa actividad económica, indicó Adex. Las agroexportaciones peruanas registraron más de US$ 7,503 millones entre enero y octubre, una caída de...
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
                 </div>
-                <div class="novedades-container">
+            </div>
 
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">Fuimos auspiciadores del séptimo Congreso Internacional de Mango y Palto</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov1.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>17 May 2023 / Procampo</span>
-                            <p>Alrededor de 600 asistentes reunió el VII Congreso Internacional de Mango y Palto, realizado este 23 y 24 de Agosto en el Complejo Turístico Huancamuña, Casma, Ancash. Este evento es organizado por la Asociación de Agricultores de Casma.</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>  
+            <div class="item">
+                <img src="imagenes/confiiii2.jpeg" alt="">
 
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">S.A, participa en importante evento nacional</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov2.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>17 May 2023 / Procampo</span>
-                            <p>Este 8 y 9 de Agosto se realizó la 1° Conferencia Red Agrícola y AgtechLatam 2018, en el hotel Costa del Sol, Trujillo, Perú.  Este importante evento reúne a grandes expertos en temas de agricultura, tales como producción de frutas y hortalizas, nutrición vegetal, riego, Fito...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
+                <div class="content">
+                    <div class="title">S.A PARTICIPA EN </div>
+                    <div class="type">EVENTO NACIONAL</div>
+                    <div class="description">
+                        Este 8 y 9 de Agosto se realizó la 1° Conferencia Red Agrícola y AgtechLatam 2018, en el hotel Costa del Sol, Trujillo, Perú. Este importante evento reúne a grandes expertos en temas de agricultura, tales como producción de frutas y hortalizas, nutrición vegetal, riego, Fito...
                     </div>
-
-                        <div class="novedades-box">
-                            <div class="novedades-text">
-                                <a href="#" class="novedades-title">Ejecutivo facilitará créditos a pequeños productores del agro con transferencia de S/ 100 millones</a>
-                                <div class="novedades-img">
-                                    <img src="imagenes/nov5.jpg" alt="NOVEDADES">
-                                </div>   
-                                <span>31 Mar 2024 / Procampo</span>
-                                <p>Medida permitirá otorgar un incentivo al pequeño productor agrario para acceder a créditos del Banco Agropecuario (Agrobanco). El Ministerio de Desarrollo Agrario y Riego (Midagri) informó que el Ejecutivo aprobó transferir S/ 100 millones al Fondo para la Inclusión Financiera del Pequeño Productor Agropecuario (FIFPPA) con...</p>
-                                <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                            </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
                     </div>
-
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">MEF busca ampliar incentivos del sector textil al sector agroexportador</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov4.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>24 Oct 2024 / Procampo</span>
-                            <p>Entre los planes está expandir su producción a China. Para tal fin está adquiriendo granjas y comenzará a plantar a fines de este año o en primer trimestre de 2024. En un contexto de reducción de volúmenes de los arándanos peruanos impactados por factores climáticos, el...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>
-
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">Productores peruanos podrían exportar hasta 100 mil toneladas de arroz al mercado colombiano</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov7.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>17 Feb 2024 / Procampo</span>
-                            <p>La potencialidad de las exportaciones de arroz nacional a Colombia se estima en alrededor de US$ 70 millones anuales y con un volumen promedio de 100 mil toneladas, montos que podrían alcanzarse como parte del levantamiento de las restricciones del gobierno de Colombia en la...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>
-
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">Agroexportaciones Llacta y la incursión de nuevos productores al cultivo de kion</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov8.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>7 Feb 2024 / Procampo</span>
-                            <p>La temporada 2023-2024 de jengibre promete una recuperación en la producción, luego de que el volumen cayera un 60% pese a la alta demanda de mercados extranjeros. Agroexportaciones Llacta reporta ingreso a nuevos competidores a este cultivo. Si bien la actual oferta de kion sigue siendo...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>
-
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">MIDAGRI inicia 84 Núcleos Ejecutores para reactivación económica del Agro en 12 departamentos</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov9.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span> 26 Oct 2024 / Procampo</span>
-                            <p>La Unidad Ejecutora Fondo Sierra Azul (UEFSA) del MIDAGRI en el marco del Plan Con Punche Perú, inició la ejecución de 84 núcleos ejecutores (NE), lo que representa un 88.4 % del total de 95 NE (que comprenden: 645 qochas y 570 kilómetros de zanjas...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>
-
-
-                    <div class="novedades-box">
-                        <div class="novedades-text">
-                            <a href="#" class="novedades-title">Agroexportaciones caen 2.6% a octubre por menores ventas de café, ¿y qué otros productos?</a>
-                            <div class="novedades-img">
-                                <img src="imagenes/nov10.jpg" alt="NOVEDADES">
-                            </div>   
-                            <span>18 Dic Feb 2024 / Procampo</span>
-                            <p>Los factores que impactaron en el comportamiento negativo fueron el fenómeno de El Niño, la crisis política y no tener un marco jurídico que promueva esa actividad económica, indicó Adex. Las agroexportaciones peruanas registraron más de US$ 7,503 millones entre enero y octubre, una caída de...</p>
-                            <div class="novedades-link"><a href="#">Sigue Leyendo</a></div>
-                        </div>
-                    </div>
-
-
                 </div>
-            </section>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/agri12.jpg" alt="">
+
+                <div class="content">
+                    <div class="title">INICIAN 84 NÚCLEOS</div>
+                    <div class="type"> EN DEPARTAMENTOS</div>
+                    <div class="description">
+                        La Unidad Ejecutora Fondo Sierra Azul (UEFSA) del MIDAGRI en el marco del Plan Con Punche Perú, inició la ejecución de 84 núcleos ejecutores (NE), lo que representa un 88.4 % del total de 95 NE (que comprenden: 645 qochas y 570 kilómetros de zanjas...
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-    </body>
-  
-</html>
+        <div class="thumbnail">
+
+            
+            <div class="item">
+                <img src="imagenes/anoche.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="imagenes/cafe.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="imagenes/confiiii2.jpeg" alt="">
+            </div>
+
+        <div class="item">
+                <img src="imagenes/agri12.jpg" alt="">
+            </div></div>
+        <div class="nextPrevArrows">
+            <button class="prev"> &lt; </button>
+            <button class="next"> &gt; </button>
+        </div>
+    </div>
+    <script src="scriptNovedades.js"></script>
+    </body></html>
 
