@@ -1,0 +1,17 @@
+const inputapellidoPaterno = document.getElementById("apellidoPaterno");
+const inputapellidoMaterno = document.getElementById("apellidoMaterno");
+const inputcorreoElectronico = document.getElementById("correoElectronico");
+const inputcontrasena = document.getElementById("contrasena");
+const inputconfirmarContrasena = document.getElementById("confirmarContrasena");
+
+    const apellidoPaterno = inputapellidoPaterno;
+    const apellidoMaterno = inputapellidoMaterno;
+    const correoElectronico = inputcorreoElectronico;
+    const contrasena = inputcontrasena;
+    const confirmarContrasena = inputconfirmarContrasena;
+
+    ApellidoPaterno : apellidoPaterno,
+    ApellidoMaterno : apellidoMaterno,
+    Email : correoElectronico,
+    Contraseña : contrasena,
+    ConfirmarContrasena : confirmarContrasena

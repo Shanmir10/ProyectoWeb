@@ -8,6 +8,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    
     <style>
         body {
             font-family: sans-serif;
@@ -80,6 +81,8 @@
 </head>
 
 <body>
+    <script type="module" src="scriptAuth.js"></script>
+    <script type="module" src="scriptDataBase.js"></script>
     <div class="container">
         <h1>INSCRIPCIÓN PORTAL PROCAMPO</h1>
         <h3> <center>REGISTRO DE CLIENTES</center></h3>
@@ -127,7 +130,7 @@
                 <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
             </div>
             <div class="row" style="text-align: center;">
-                <button type="submit"><i class="fas fa-save"></i> Grabar</button>
+                <input type="submit" id="btnGrabar"><i class="fas fa-save"></i> Grabar</button>
                 <button type="button" id="signUp" onclick="window.location.href='Index_Inscripcion.html'">
                     <i class="fas fa-arrow-left"></i> Regresar</button>
             </div>   

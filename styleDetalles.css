@@ -1,78 +1,122 @@
-
+/* Variables de color */
 :root {
     --primary-color: #14ff72;
-    --background-color: #fff;
-    --text-color: #000;
     --button-background: #14ff72;
     --button-text-color: #fff;
 }
 
-/* Estilos para el body */
+/* Estilos generales */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Estilos para el encabezado */
 header {
-    width: 100%;
-    max-width: 1140px;
-    margin: auto;
-    height: 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 100;
+    width: 80%;
+    margin: auto;
 }
 
-header a {
-    color: var(--text-color);
-    margin: 0 10px;
-    padding: 5px 10px;
-    transition: 0.2s;
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: color 0.2s ease-in-out;
+    /* Transición suave para el cambio de color */
 }
 
-header a:hover {
-    background: var(--primary-color);
-    border-radius: 2px;
-    color: var(--text-color);
+nav ul a:hover {
+    color: var(--primary-color);
+    /* Cambia al color verde cuando se pasa el cursor */
 }
 
-/* Estilos para el contenido principal */
 main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para los enlaces activos */
-header a.active {
-    background: var(--primary-color);
-    border-radius: 2px;
-    color: var(--text-color);
+.c-ch-news-intro_content {
+    text-align: left;
 }
 
-/* Estilos para mejorar la legibilidad */
-p, h1, h2, h3, h4, h5, h6 {
-    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+.c-ch-news-intro__title {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.c-ch-news-intro__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.c-figure__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.qtheme-main-block {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
 }
 
 /* Estilos para los botones */
-button {
-    border: none;
-    background-color: var(--button-background);
-    color: var(--button-text-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.4s;
-    letter-spacing: 2px;
-    padding: 8px 16px;
-}
-
 button:hover {
     letter-spacing: 3px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }

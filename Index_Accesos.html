@@ -1,72 +1,37 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href = "styleAccesos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-</head> 
-
-
-
-<body> 
-
-    <div class="container">
-        <div class="form-container">
-                <h1 id= "title" > <center>PROCAMPO</center></h1>
-                <form>
-                        <div class="input-group">
-                            <div class="input-field" id="tipoInput"> 
-                             <i class="fa-solid fa-user"></i> 
-                            <select  id="tipoUsuario" name=" tipoUsuario" class="custom-select"> 
-                                <option value=" selected ">-   Seleccione Usuario -</option> 
-                                <option value=" Cliente"> CLIENTE</option>
-                                <option value=" Procampo"> PROCAMPO</option>
-                                <option value=" Proveedor"> PROVEEDOR</option> 
-                            </select>
-                        </div>
-                    </div>
-            <br>
-            <div class="input-field">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="usuario" class="user-input">
+    <link rel="stylesheet" href="styleAccesos.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <form>
+            <h1>Inicio</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label for="">Usuario</label>
             </div>
-
-            <br>
- 
-            <div class="input-field">
-                <i class="fa-solid fa-lock" ></i>
-                <input type="password" placeholder ="contraseña ">
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required>
+                <label for="">Contraseña</label>
             </div>
-
-            <p><a href="#"><center>Olvidaste tu contraseña?</center></a> </p>
-       
-            <div class="btn-field">
-                <button type="button" id="signUp" onclick="window.location.href='Index_Inscripcion.html'">Registrarte</button>
-                <button type="submit" id="signIn" class="disable">Login</button>
+            <div class="forget">
+                <label for=""><input type="checkbox">Recordar</label>
+                <a href="#">Olvidé la Contraseña</a>
             </div>
-        </div>
+            <button>Iniciar</button>
+            <div class="register">
+                <p>No tengo una cuenta <a href="Index_Inscripcion.html">Registrate</a></p>
+            </div>
         </form>
-    </div>
-</div>
-
-
-<div class="acceso-img">
-    <img src="imagenes/im1.jpg" alt="NOVEDADES">
-</div> 
+    </section>
     <script src="scriptAccesos.js"></script>
-
-
-    
 </body>
 </html>
-=======
->>>>>>> parent of 57a323b (class acceso)
-=======
->>>>>>> parent of 57a323b (class acceso)
